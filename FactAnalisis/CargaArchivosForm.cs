@@ -14,9 +14,15 @@ namespace FactAnalisis
 {
     public partial class CargaArchivosForm : Office2007Form
     {
+        ArchivosFacturacion archivosFact;
         public CargaArchivosForm()
         {
             InitializeComponent();
+            archivosFact = ArchivosFacturacion.Instance;
+            txtRutaFactBruta.Text = archivosFact.rutaFactBruta;
+            txtRutaNotas.Text = archivosFact.rutaNotas;
+            btnCargarFactBruta.Focus();
+
         }
 
         private void btnCargarFactBruta_Click(object sender, EventArgs e)
@@ -68,7 +74,7 @@ namespace FactAnalisis
             }
 
             LimpiarValidacionDeCampos();
-            ArchivosFacturacion archivosFact = ArchivosFacturacion.Instance;
+           
             archivosFact.rutaFactBruta = txtRutaFactBruta.Text;
             archivosFact.rutaNotas = txtRutaNotas.Text;
             MessageBoxEx.EnableGlass = false;

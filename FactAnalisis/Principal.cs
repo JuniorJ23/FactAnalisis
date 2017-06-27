@@ -20,9 +20,43 @@ namespace FactAnalisis
 
         private void cargarFacturaciónBrutaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CargaArchivosForm myForm = new CargaArchivosForm();
-            myForm.MdiParent = this;
-            myForm.Show();
+            FormCollection fc = Application.OpenForms;
+            bool FormFound = false;
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "CargaArchivosForm")
+                {
+                    frm.Focus();
+                    FormFound = true;
+                }
+            }
+            if (FormFound == false)
+            {
+                CargaArchivosForm myForm = new CargaArchivosForm();
+                myForm.MdiParent = this;
+                myForm.Show();
+            }
+          
+        }
+
+        private void analisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCollection fc = Application.OpenForms;
+            bool FormFound = false;
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "Analisis")
+                {
+                    frm.Focus();
+                    FormFound = true;
+                }
+            }
+            if (FormFound == false)
+            {
+                Analisis myForm = new Analisis();
+                myForm.MdiParent = this;
+                myForm.Show();
+            }
         }
     }
 }

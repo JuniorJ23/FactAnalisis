@@ -11,6 +11,7 @@ namespace FactAnalisis.Model
     [DelimitedRecord("|")]
     public class BaseCSV
     {
+
         public int codreg;
 
         public int nuanio;
@@ -30,52 +31,53 @@ namespace FactAnalisis.Model
         public String codcon;
 
         [FieldNullValue("")]
-        public String codudu;
+        public string codudu;
 
-        [FieldNullValue(0)]
-        public int escone;
+        
+        public int? escone;
 
         [FieldNullValue("")]
         public String codmed;
 
-        [FieldNullValue(0)]
-        public int codcat;
+        
+        public int? codcat;
 
         [FieldNullValue("")]
         public String nomcat;
 
-        [FieldNullValue(0)]
-        public int codtis;
+        
+        public string codtis;
 
         [FieldNullValue("")]
         public String codmof;
 
         [FieldConverter(ConverterKind.Date, "yyyy-MM-dd")]
-        [FieldNullValue(typeof(DateTime), "1900-01-01")]
-        public DateTime fleact;
+        public DateTime? fleact;
 
         [FieldConverter(ConverterKind.Date, "yyyy-MM-dd")]
-        [FieldNullValue(typeof(DateTime), "1900-01-01")]
-        public DateTime fleant;
+        public DateTime? fleant;
 
-        [FieldNullValue(0)]
-        public int lecact;
+        
+        public int? lecact;
 
-        [FieldNullValue(0)]
-        public int lecant;
+        
+        public int? lecant;
 
-        [FieldNullValue(0)]
-        public int diflec;
+        
+        public int? diflec;
 
         [FieldNullValue(0)]
         public int volfac;
 
+        [FieldConverter(ConverterKind.Decimal, ".")]
         [FieldNullValue(typeof(decimal), "0")]
         public decimal imcafi;
 
+        [FieldConverter(ConverterKind.Decimal, ".")]
         [FieldNullValue(typeof(decimal), "0")]
         public decimal imagua;
 
+        [FieldConverter(ConverterKind.Decimal, ".")]
         [FieldNullValue(typeof(decimal), "0")]
         public decimal imalca;
     }

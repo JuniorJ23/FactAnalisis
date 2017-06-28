@@ -1,5 +1,7 @@
-﻿using System;
+﻿using FactAnalisis.Util;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,8 +24,13 @@ namespace FactAnalisis
 
         static void OnProcessExit(object sender, EventArgs e)
         {
-            Console.WriteLine("SALIENDO");
-            //TODO: CLEAR THE DATABASE
+            Configuracion config = Configuracion.Instance;
+            if (!string.IsNullOrEmpty(config.rutaSQLite))
+            {
+                ConexionSQLite conexion = new ConexionSQLite(Path.Combine(config.rutaSQLite,"facturacion.db"));
+                conexion.LimpiarTablasBaseYNotas();
+            }
+            
         }
     }
 }

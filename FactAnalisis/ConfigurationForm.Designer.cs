@@ -39,6 +39,10 @@
             this.btnRutaExport = new DevComponents.DotNetBar.ButtonX();
             this.btnAceptar = new DevComponents.DotNetBar.ButtonX();
             this.btnCancelar = new DevComponents.DotNetBar.ButtonX();
+            this.configFormValidator = new DevComponents.DotNetBar.Validator.SuperValidator();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.highlighter1 = new DevComponents.DotNetBar.Validator.Highlighter();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // styleManager1
@@ -146,6 +150,21 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // configFormValidator
+            // 
+            this.configFormValidator.ContainerControl = this;
+            this.configFormValidator.ErrorProvider = this.errorProvider1;
+            this.configFormValidator.Highlighter = this.highlighter1;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            // 
+            // highlighter1
+            // 
+            this.highlighter1.ContainerControl = this;
+            // 
             // ConfigurationForm
             // 
             this.AcceptButton = this.btnAceptar;
@@ -169,6 +188,7 @@
             this.MinimizeBox = false;
             this.Name = "ConfigurationForm";
             this.Text = "Configuración";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,5 +204,8 @@
         private DevComponents.DotNetBar.ButtonX btnRutaExport;
         private DevComponents.DotNetBar.ButtonX btnAceptar;
         private DevComponents.DotNetBar.ButtonX btnCancelar;
+        private DevComponents.DotNetBar.Validator.SuperValidator configFormValidator;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private DevComponents.DotNetBar.Validator.Highlighter highlighter1;
     }
 }

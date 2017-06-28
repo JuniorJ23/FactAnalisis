@@ -33,6 +33,8 @@
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.gpAcciones = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnMergeFact = new DevComponents.DotNetBar.ButtonX();
+            this.pgbAnalisis = new DevComponents.DotNetBar.Controls.ProgressBarX();
+            this.btnGenerarFactNeta = new DevComponents.DotNetBar.ButtonX();
             this.gpAcciones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,10 +46,11 @@
             // 
             this.gpAcciones.CanvasColor = System.Drawing.SystemColors.Control;
             this.gpAcciones.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.gpAcciones.Controls.Add(this.btnGenerarFactNeta);
             this.gpAcciones.Controls.Add(this.btnMergeFact);
             this.gpAcciones.Location = new System.Drawing.Point(12, 12);
             this.gpAcciones.Name = "gpAcciones";
-            this.gpAcciones.Size = new System.Drawing.Size(367, 674);
+            this.gpAcciones.Size = new System.Drawing.Size(367, 648);
             // 
             // 
             // 
@@ -80,35 +83,65 @@
             this.gpAcciones.StyleMouseOver.Class = "";
             this.gpAcciones.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpAcciones.TabIndex = 0;
-            this.gpAcciones.Text = "Acciones";
+            this.gpAcciones.Text = "ACCIONES";
             // 
             // btnMergeFact
             // 
             this.btnMergeFact.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnMergeFact.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnMergeFact.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMergeFact.Location = new System.Drawing.Point(57, 15);
             this.btnMergeFact.Name = "btnMergeFact";
-            this.btnMergeFact.Size = new System.Drawing.Size(218, 23);
+            this.btnMergeFact.Size = new System.Drawing.Size(218, 34);
             this.btnMergeFact.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnMergeFact.TabIndex = 0;
-            this.btnMergeFact.Text = "GENERAR FACTURACION NETA";
-            this.btnMergeFact.Tooltip = "Ésta opción unirá la facturación bruta con las notas seleccionadas anteriormente." +
-    "";
+            this.btnMergeFact.Text = "1. GUARDAR FACTURACION BRUTA Y NOTAS";
+            this.btnMergeFact.Tooltip = "Se guardará en la BD los archivos de facturacion y notas antes seleccionados.";
             this.btnMergeFact.Click += new System.EventHandler(this.btnMergeFact_Click);
+            // 
+            // pgbAnalisis
+            // 
+            // 
+            // 
+            // 
+            this.pgbAnalisis.BackgroundStyle.Class = "";
+            this.pgbAnalisis.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.pgbAnalisis.Location = new System.Drawing.Point(12, 666);
+            this.pgbAnalisis.Name = "pgbAnalisis";
+            this.pgbAnalisis.ProgressType = DevComponents.DotNetBar.eProgressItemType.Marquee;
+            this.pgbAnalisis.Size = new System.Drawing.Size(1445, 27);
+            this.pgbAnalisis.TabIndex = 1;
+            this.pgbAnalisis.Text = "progressBarX1";
+            this.pgbAnalisis.Visible = false;
+            // 
+            // btnGenerarFactNeta
+            // 
+            this.btnGenerarFactNeta.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnGenerarFactNeta.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnGenerarFactNeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarFactNeta.Location = new System.Drawing.Point(57, 55);
+            this.btnGenerarFactNeta.Name = "btnGenerarFactNeta";
+            this.btnGenerarFactNeta.Size = new System.Drawing.Size(218, 23);
+            this.btnGenerarFactNeta.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnGenerarFactNeta.TabIndex = 1;
+            this.btnGenerarFactNeta.Text = "2. GENERAR FACTURACION NETA";
+            this.btnGenerarFactNeta.Tooltip = "Se unirá la Facturación bruta con las notas.";
             // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1469, 698);
+            this.Controls.Add(this.pgbAnalisis);
             this.Controls.Add(this.gpAcciones);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Analisis";
-            this.Text = "Análisis";
+            this.Text = "ANÁLISIS";
             this.gpAcciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -119,5 +152,7 @@
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private DevComponents.DotNetBar.Controls.GroupPanel gpAcciones;
         private DevComponents.DotNetBar.ButtonX btnMergeFact;
+        private DevComponents.DotNetBar.Controls.ProgressBarX pgbAnalisis;
+        private DevComponents.DotNetBar.ButtonX btnGenerarFactNeta;
     }
 }

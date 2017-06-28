@@ -34,6 +34,7 @@ namespace FactAnalisis
                 DialogResult result = fbd.ShowDialog();
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
+                    LimpiarValidacionDeCampos();
                     txtRutaBD.Text = fbd.SelectedPath;
                 }
             }
@@ -46,6 +47,7 @@ namespace FactAnalisis
                 DialogResult result = fbd.ShowDialog();
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
+                    LimpiarValidacionDeCampos();
                     txtRutaExport.Text = fbd.SelectedPath;
                 }
             }
@@ -55,17 +57,39 @@ namespace FactAnalisis
         {
             if (string.IsNullOrEmpty(txtRutaBD.Text))
             {
+                configFormValidator.ErrorProvider.SetError(txtRutaBD, "COMPLETE EL CAMPO DE RUTA DE LA BD.");
+                configFormValidator.Highlighter.SetHighlightColor(txtRutaBD, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
                 return;
             }
 
             if (string.IsNullOrEmpty(txtRutaExport.Text))
             {
+                configFormValidator.ErrorProvider.SetError(txtRutaExport, "COMPLETE EL CAMPO DE RUTA DE EXPORTACION DBF.");
+                configFormValidator.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
                 return;
             }
+
+            LimpiarValidacionDeCampos();
 
             config.rutaSQLite = txtRutaBD.Text;
             config.rutaExportDBF = txtRutaExport.Text;
 
+            MessageBoxEx.EnableGlass = false;
+            DialogResult result = MessageBoxEx.Show(this, "Valores cargados correctamente", "Información del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            if (result == DialogResult.OK)
+            {
+                Close();
+            }
+
+        }
+
+        private void LimpiarValidacionDeCampos()
+        {
+            configFormValidator.ErrorProvider.SetError(txtRutaBD, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtRutaBD, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+
+            configFormValidator.ErrorProvider.SetError(txtRutaExport, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.None);
         }
     }
 }

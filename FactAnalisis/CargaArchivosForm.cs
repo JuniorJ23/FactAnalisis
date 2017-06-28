@@ -24,6 +24,7 @@ namespace FactAnalisis
             txtRutaFactBruta.Text = archivosFact.rutaFactBruta;
             txtRutaNotas.Text = archivosFact.rutaNotas;
             btnCargarFactBruta.Focus();
+            MessageBoxEx.EnableGlass = false;
 
         }
 
@@ -40,16 +41,15 @@ namespace FactAnalisis
                 LimpiarValidacionDeCampos();
                 txtRutaFactBruta.Text = openFileDialog.FileName;
 
-                var engine = new FileHelperEngine<BaseCSV>();
-                var result = engine.ReadFile(txtRutaFactBruta.Text);
-
-                foreach (BaseCSV cust in result)
-                {
-                    Console.WriteLine("Customer Info:");
-                    Console.WriteLine(cust.codcon + " - " +
-                                      cust.fleact.ToString("dd/MM/yy"));
+                try { 
+                    var engine = new DelimitedFileEngine<BaseCSV>();
+                    engine.Encoding = Encoding.UTF8;
+                    var result = engine.ReadFile(txtRutaFactBruta.Text);
+                }catch(ConvertException ex){
+                    txtRutaFactBruta.Text = "";
+                  MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO REGISTRO ERROR: " + ex.LineNumber , 
+                       "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
         }
 
@@ -65,16 +65,18 @@ namespace FactAnalisis
             {
                 LimpiarValidacionDeCampos();
                 txtRutaNotas.Text = openFileDialog.FileName;
-                /**
-                var engine = new FileHelperEngine<NotasCSV>();
-                var result = engine.ReadFile(txtRutaNotas.Text);
-
-                foreach (NotasCSV cust in result)
+                try
                 {
-                    Console.WriteLine("Customer Info:");
-                    Console.WriteLine(cust.estado_nota + " - " +
-                                      cust.fecha_emision.ToString("dd/MM/yy"));
-                }**/
+                    var engine = new FileHelperEngine<NotasCSV>();
+                    engine.Encoding = Encoding.UTF8;
+                    var result = engine.ReadFile(txtRutaNotas.Text);
+                }
+                catch (ConvertException ex)
+                {
+                    txtRutaNotas.Text = "";
+                    MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO REGISTRO ERROR: " + ex.LineNumber,
+                         "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
         }
@@ -101,7 +103,7 @@ namespace FactAnalisis
            
             archivosFact.rutaFactBruta = txtRutaFactBruta.Text;
             archivosFact.rutaNotas = txtRutaNotas.Text;
-            MessageBoxEx.EnableGlass = false;
+           
             DialogResult result = MessageBoxEx.Show(this,"Valores cargados correctamente","Información del sistema",MessageBoxButtons.OKCancel,MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             if(result == DialogResult.OK)
             {

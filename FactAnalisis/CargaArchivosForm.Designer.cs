@@ -35,13 +35,13 @@
             this.lblNotas = new DevComponents.DotNetBar.LabelX();
             this.gpArchivos = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnAceptar = new DevComponents.DotNetBar.ButtonX();
+            this.btnCargarNotas = new DevComponents.DotNetBar.ButtonX();
+            this.btnCargarFactBruta = new DevComponents.DotNetBar.ButtonX();
             this.txtRutaNotas = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtRutaFactBruta = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.validatorCargaForm = new DevComponents.DotNetBar.Validator.SuperValidator();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.highlighter1 = new DevComponents.DotNetBar.Validator.Highlighter();
-            this.btnCargarNotas = new DevComponents.DotNetBar.ButtonX();
-            this.btnCargarFactBruta = new DevComponents.DotNetBar.ButtonX();
             this.gpArchivos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +136,31 @@
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // btnCargarNotas
+            // 
+            this.btnCargarNotas.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCargarNotas.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCargarNotas.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
+            this.btnCargarNotas.Location = new System.Drawing.Point(708, 54);
+            this.btnCargarNotas.Name = "btnCargarNotas";
+            this.btnCargarNotas.Size = new System.Drawing.Size(75, 20);
+            this.btnCargarNotas.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
+            this.btnCargarNotas.TabIndex = 5;
+            this.btnCargarNotas.Click += new System.EventHandler(this.btnCargarNotas_Click);
+            // 
+            // btnCargarFactBruta
+            // 
+            this.btnCargarFactBruta.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCargarFactBruta.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCargarFactBruta.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
+            this.btnCargarFactBruta.Location = new System.Drawing.Point(708, 28);
+            this.btnCargarFactBruta.Name = "btnCargarFactBruta";
+            this.btnCargarFactBruta.Size = new System.Drawing.Size(75, 21);
+            this.btnCargarFactBruta.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
+            this.btnCargarFactBruta.TabIndex = 4;
+            this.btnCargarFactBruta.Tooltip = "Seleccionar ruta del archivo de Facturación bruta.";
+            this.btnCargarFactBruta.Click += new System.EventHandler(this.btnCargarFactBruta_Click);
+            // 
             // txtRutaNotas
             // 
             // 
@@ -179,31 +204,6 @@
             // 
             this.highlighter1.ContainerControl = this;
             // 
-            // btnCargarNotas
-            // 
-            this.btnCargarNotas.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnCargarNotas.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnCargarNotas.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
-            this.btnCargarNotas.Location = new System.Drawing.Point(708, 54);
-            this.btnCargarNotas.Name = "btnCargarNotas";
-            this.btnCargarNotas.Size = new System.Drawing.Size(75, 20);
-            this.btnCargarNotas.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
-            this.btnCargarNotas.TabIndex = 5;
-            this.btnCargarNotas.Click += new System.EventHandler(this.btnCargarNotas_Click);
-            // 
-            // btnCargarFactBruta
-            // 
-            this.btnCargarFactBruta.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnCargarFactBruta.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnCargarFactBruta.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
-            this.btnCargarFactBruta.Location = new System.Drawing.Point(708, 28);
-            this.btnCargarFactBruta.Name = "btnCargarFactBruta";
-            this.btnCargarFactBruta.Size = new System.Drawing.Size(75, 21);
-            this.btnCargarFactBruta.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
-            this.btnCargarFactBruta.TabIndex = 4;
-            this.btnCargarFactBruta.Tooltip = "Seleccionar ruta del archivo de Facturación bruta.";
-            this.btnCargarFactBruta.Click += new System.EventHandler(this.btnCargarFactBruta_Click);
-            // 
             // CargaArchivosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +212,7 @@
             this.Controls.Add(this.gpArchivos);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CargaArchivosForm";

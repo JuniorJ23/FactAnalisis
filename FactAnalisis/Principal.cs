@@ -58,5 +58,25 @@ namespace FactAnalisis
                 myForm.Show();
             }
         }
+
+        private void configuraciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCollection fc = Application.OpenForms;
+            bool FormFound = false;
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "ConfigurationForm")
+                {
+                    frm.Focus();
+                    FormFound = true;
+                }
+            }
+            if (FormFound == false)
+            {
+                ConfigurationForm myForm = new ConfigurationForm();
+                myForm.MdiParent = this;
+                myForm.Show();
+            }
+        }
     }
 }

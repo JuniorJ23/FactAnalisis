@@ -1,7 +1,5 @@
 ﻿using DevComponents.DotNetBar;
-using FactAnalisis.Model;
 using FactAnalisis.Util;
-using FileHelpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,17 +37,6 @@ namespace FactAnalisis
             {
                 LimpiarValidacionDeCampos();
                 txtRutaFactBruta.Text = openFileDialog.FileName;
-
-                var engine = new FileHelperEngine<BaseCSV>();
-                var result = engine.ReadFile(txtRutaFactBruta.Text);
-
-                foreach (BaseCSV cust in result)
-                {
-                    Console.WriteLine("Customer Info:");
-                    Console.WriteLine(cust.codcon + " - " +
-                                      cust.fleact.ToString("dd/MM/yy"));
-                }
-
             }
         }
 
@@ -65,17 +52,6 @@ namespace FactAnalisis
             {
                 LimpiarValidacionDeCampos();
                 txtRutaNotas.Text = openFileDialog.FileName;
-                /**f
-                var engine = new FileHelperEngine<NotasCSV>();
-                var result = engine.ReadFile(txtRutaNotas.Text);
-
-                foreach (NotasCSV cust in result)
-                {
-                    Console.WriteLine("Customer Info:");
-                    Console.WriteLine(cust.estado_nota + " - " +
-                                      cust.fecha_emision.ToString("dd/MM/yy"));
-                }**/
-
             }
         }
 

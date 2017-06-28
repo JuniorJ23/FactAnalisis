@@ -64,6 +64,8 @@
     <Compile Include="CargaArchivosForm.Designer.cs">
       <DependentUpon>CargaArchivosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BaseCSV.cs" />
+    <Compile Include="Model\NotasCSV.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>

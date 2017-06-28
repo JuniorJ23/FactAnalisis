@@ -65,7 +65,7 @@ namespace FactAnalisis
             {
                 LimpiarValidacionDeCampos();
                 txtRutaNotas.Text = openFileDialog.FileName;
-                /**f
+                /**
                 var engine = new FileHelperEngine<NotasCSV>();
                 var result = engine.ReadFile(txtRutaNotas.Text);
 

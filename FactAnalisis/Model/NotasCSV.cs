@@ -7,6 +7,7 @@ using FileHelpers;
 
 namespace FactAnalisis.Model
 {
+    [IgnoreFirst(1)] 
     [DelimitedRecord("|")]
     public class NotasCSV
     {

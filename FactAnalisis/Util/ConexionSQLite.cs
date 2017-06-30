@@ -142,6 +142,66 @@ namespace FactAnalisis.Util
             }
         }
 
+        public double ObtenerTarifaAgua(int grupo,int categoria, int rango, int periodo)
+        {
+            double Result = 0;
+            string SQL = "SELECT agua FROM tbl_est_tarif WHERE id_grupo = @p1, id_categoria = @p2, id_rang = @p3, id_periodo = @p4";
+            SQLiteCommand command = new SQLiteCommand(SQL, Connection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            if (!reader.HasRows)
+            {
+                Result = 0;
+            }
+            else
+            {
+                try
+                {
+                    while (reader.Read())
+                    {
+                        Result = reader.GetDouble("agua");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            reader.Close();
+            return Result;
+        }
+
+        public double ObtenerTarifaDesague(int grupo, int categoria, int rango, int periodo)
+        {
+            double Result = 0;
+            string SQL = "SELECT alcantarillado FROM tbl_est_tarif WHERE id_grupo = @p1, id_categoria = @p2, id_rang = @p3, id_periodo = @p4";
+            SQLiteCommand command = new SQLiteCommand(SQL, Connection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            if (!reader.HasRows)
+            {
+                Result = 0;
+            }
+            else
+            {
+                try
+                {
+                    while (reader.Read())
+                    {
+                        Result = reader.GetDouble("alcantarillado");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            reader.Close();
+            return Result;
+        }
+
 
     }
 }

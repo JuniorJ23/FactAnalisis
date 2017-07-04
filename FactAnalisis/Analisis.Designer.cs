@@ -29,13 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analisis));
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.gpAcciones = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnGenerarFactNeta = new DevComponents.DotNetBar.ButtonX();
             this.btnMergeFact = new DevComponents.DotNetBar.ButtonX();
             this.pgbAnalisis = new DevComponents.DotNetBar.Controls.ProgressBarX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.dataGridBase = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.gpAcciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBase)).BeginInit();
             this.SuspendLayout();
             // 
             // styleManager1
@@ -46,6 +50,7 @@
             // 
             this.gpAcciones.CanvasColor = System.Drawing.SystemColors.Control;
             this.gpAcciones.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.gpAcciones.Controls.Add(this.buttonX1);
             this.gpAcciones.Controls.Add(this.btnGenerarFactNeta);
             this.gpAcciones.Controls.Add(this.btnMergeFact);
             this.gpAcciones.Location = new System.Drawing.Point(12, 12);
@@ -97,6 +102,7 @@
             this.btnGenerarFactNeta.TabIndex = 1;
             this.btnGenerarFactNeta.Text = "2. GENERAR FACTURACION NETA";
             this.btnGenerarFactNeta.Tooltip = "Se unirá la Facturación bruta con las notas.";
+            this.btnGenerarFactNeta.Click += new System.EventHandler(this.btnGenerarFactNeta_Click);
             // 
             // btnMergeFact
             // 
@@ -127,11 +133,49 @@
             this.pgbAnalisis.Text = "progressBarX1";
             this.pgbAnalisis.Visible = false;
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Enabled = false;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Location = new System.Drawing.Point(57, 84);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(218, 28);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 2;
+            this.buttonX1.Text = "3. VISUALIZAR DATA";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // dataGridBase
+            // 
+            this.dataGridBase.AllowUserToAddRows = false;
+            this.dataGridBase.AllowUserToDeleteRows = false;
+            this.dataGridBase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridBase.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridBase.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridBase.Location = new System.Drawing.Point(385, 12);
+            this.dataGridBase.MultiSelect = false;
+            this.dataGridBase.Name = "dataGridBase";
+            this.dataGridBase.ReadOnly = true;
+            this.dataGridBase.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridBase.Size = new System.Drawing.Size(1072, 660);
+            this.dataGridBase.TabIndex = 2;
+            this.dataGridBase.Visible = false;
+            // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1469, 698);
+            this.Controls.Add(this.dataGridBase);
             this.Controls.Add(this.pgbAnalisis);
             this.Controls.Add(this.gpAcciones);
             this.DoubleBuffered = true;
@@ -143,6 +187,7 @@
             this.Name = "Analisis";
             this.Text = "ANÁLISIS";
             this.gpAcciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +199,7 @@
         private DevComponents.DotNetBar.ButtonX btnMergeFact;
         private DevComponents.DotNetBar.Controls.ProgressBarX pgbAnalisis;
         private DevComponents.DotNetBar.ButtonX btnGenerarFactNeta;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridBase;
     }
 }

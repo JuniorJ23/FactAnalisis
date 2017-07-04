@@ -94,6 +94,7 @@
     <Compile Include="ConfigurationForm.Designer.cs">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BaseBD.cs" />
     <Compile Include="Model\BaseCSV.cs" />
     <Compile Include="Model\NotasCSV.cs" />
     <Compile Include="Principal.cs">
@@ -105,6 +106,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\ArchivosFacturacion.cs" />
+    <Compile Include="Util\Procesamiento.cs" />
     <Compile Include="Util\CalculoImportes.cs" />
     <Compile Include="Util\CalculoVolumen.cs" />
     <Compile Include="Util\ConexionSQLite.cs" />

@@ -74,7 +74,7 @@ namespace FactAnalisis
                 catch (ConvertException ex)
                 {
                     txtRutaNotas.Text = "";
-                    MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO REGISTRO ERROR: " + ex.LineNumber,
+                    MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO DE FILA CON ERROR: " + ex.LineNumber,
                          "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 

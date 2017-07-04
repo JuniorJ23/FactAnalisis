@@ -12,8 +12,11 @@ namespace FactAnalisis.Util
         private static readonly object padlock = new object();
 
 
-        public string rutaFactBruta { get; set; }
+        public string rutaFactBruta { get; set; } 
         public string rutaNotas { get; set; }
+
+        public bool insertadasEnBD { get; set; } = false;
+        public bool notasInsertadasEnBD { get; set; } = false;
 
 
         ArchivosFacturacion()

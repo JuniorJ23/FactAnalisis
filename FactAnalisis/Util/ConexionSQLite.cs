@@ -3,6 +3,7 @@ using DevComponents.DotNetBar;
 using FactAnalisis.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,10 +21,12 @@ namespace FactAnalisis.Util
 
         private void ConnectToDatabase(string ruta)
         {
-            try { 
+            try
+            {
                 Connection = new SQLiteConnection("Data Source=" + ruta + ";Version=3;");
                 Connection.Open();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 MessageBoxEx.EnableGlass = false;
@@ -83,7 +86,7 @@ namespace FactAnalisis.Util
                 transaction.Commit();
             }
 
-               
+
 
 
         }
@@ -97,7 +100,8 @@ namespace FactAnalisis.Util
             {
                 string SQL = "INSERT INTO tbl_notas(codsum, volagua, volalca, nvolagua, nvolalca, imagua, imalca, nimagua, nimalca, ncargo)" +
                    "VALUES (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)";
-                foreach (NotasCSV notaCSV in notasCSV) { 
+                foreach (NotasCSV notaCSV in notasCSV)
+                {
                     command.Parameters.Clear();
                     command.CommandText = SQL;
                     command.Parameters.AddWithValue("@p1", notaCSV.num_inscripcion);
@@ -123,7 +127,7 @@ namespace FactAnalisis.Util
                 transaction.Commit();
             }
 
-               
+
         }
 
 
@@ -133,19 +137,21 @@ namespace FactAnalisis.Util
             string SQL2 = "DELETE FROM tbl_notas";
             SQLiteCommand command1 = new SQLiteCommand(SQL1, Connection);
             SQLiteCommand command2 = new SQLiteCommand(SQL2, Connection);
-            try { 
+            try
+            {
                 command1.ExecuteNonQuery();
                 command2.ExecuteNonQuery();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
 
-        public double ObtenerTarifaAgua(int grupo,int categoria, int rango, int periodo)
+        public double ObtenerTarifaAgua(int grupo, int categoria, int rango, int periodo)
         {
             double Result = 0;
-            string SQL = "SELECT agua FROM tbl_est_tarif WHERE id_grupo = @p1, id_categoria = @p2, id_rang = @p3, id_periodo = @p4";
+            string SQL = "SELECT agua FROM tbl_est_tarif WHERE id_grupo =" + grupo + " AND id_categoria = " + categoria + " AND id_rango = " + rango + " AND id_periodo = " + periodo;
             SQLiteCommand command = new SQLiteCommand(SQL, Connection);
             SQLiteDataReader reader = command.ExecuteReader();
 
@@ -175,7 +181,7 @@ namespace FactAnalisis.Util
         public double ObtenerTarifaDesague(int grupo, int categoria, int rango, int periodo)
         {
             double Result = 0;
-            string SQL = "SELECT alcantarillado FROM tbl_est_tarif WHERE id_grupo = @p1, id_categoria = @p2, id_rang = @p3, id_periodo = @p4";
+            string SQL = "SELECT alcantarillado FROM tbl_est_tarif WHERE id_grupo  =" + grupo + " AND id_categoria = " + categoria + " AND id_rango = " + rango + " AND id_periodo = " + periodo;
             SQLiteCommand command = new SQLiteCommand(SQL, Connection);
             SQLiteDataReader reader = command.ExecuteReader();
 
@@ -202,6 +208,151 @@ namespace FactAnalisis.Util
             return Result;
         }
 
+        public List<BaseBD> ObtenerTodaLaBase()
+        {
+            List<BaseBD> Result = new List<BaseBD>();
+            string SQL = "SELECT * FROM tbl_base_facturacion";
+            SQLiteCommand command = new SQLiteCommand(SQL, Connection);
+            SQLiteDataReader reader = command.ExecuteReader();
 
+            if (!reader.HasRows)
+            {
+                Console.WriteLine("NO TIENE FILAS");
+                Result = null;
+            }
+            else
+            {
+                try
+                {
+                    while (reader.Read())
+                    {
+                        BaseBD baseBD = new BaseBD()
+                        {
+                            codreg = reader.GetInt32("id"),
+                            /** nuanio = reader.GetInt32("nuanio"),
+                             nummes = reader.GetInt32("nummes"),
+                             codeps = reader.GetInt32("codeps"),
+                             codamb = Int32.Parse(reader.GetString("codamb").Trim()),
+                             codloc = reader.GetInt32("codloc"),
+                             nomloc = reader.GetString("nomloc"),
+                           
+                            nomusu = reader.GetString("nomusu"),**/
+                            codcon = reader.GetString("codcon"),
+                           // codudu = reader.GetString("codudu"),
+                            escone = reader.GetInt32("escone"),
+                           // codmed = reader.GetString("codmed"),
+                           // codcat = reader.GetInt32("codcat"),
+                            nomcat = reader.GetString("nomcat"),
+                            codtis = reader.GetString("codtis"),
+                           // codmof = reader.GetString("codmof"),
+                           // fleact = reader.GetDateTime("fleact"),
+                           // fleant = reader.GetDateTime("fleant"),
+                           /** lecact = reader.GetInt32("lecact"),
+                            lecant = reader.GetInt32("lecant"),
+                            diflec = reader.GetInt32("diflec"),
+                            volfac = reader.GetDouble("volfact"),
+                            imcafi = reader.GetDouble("imcafi"),
+                            imagua = reader.GetDouble("imagua"),
+                            imalca = reader.GetDouble("imalca"),
+                            nimagua = reader.GetDouble("nimagua"),
+                            nimalca = reader.GetDouble("nimalca"),
+                            nvol = reader.GetInt32("nvol"),
+                            imagua_nuevo = reader.GetDouble("imagua_nuevo"),
+                            imalca_nuevo = reader.GetDouble("imalca_nuevo"),
+                            num_unidades = reader.GetInt32("num_unidades"),
+                            volagua = reader.GetDouble("volagua"),
+                            volalca = reader.GetDouble("volalca"),
+                            ncargo = reader.GetDouble("ncargo"),
+                            estado = reader.GetBoolean("estado")**/
+                        };
+
+                        Result.Add(baseBD);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            reader.Close();
+            return Result;
+        }
+
+
+        public void ActualizarBase(List<BaseBD> lista)
+        {
+            SQLiteCommand command = new SQLiteCommand("", Connection);
+
+            using (var transaction = Connection.BeginTransaction())
+            {
+                string SQL = "UPDATE tbl_base_facturacion SET imagua_nuevo = @p1, imalca_nuevo = @p2 WHERE id = @p3";
+                foreach (BaseBD baseBD in lista)
+                {
+                    command.Parameters.Clear();
+                    command.CommandText = SQL;
+                    command.Parameters.AddWithValue("@p1", baseBD.imagua_nuevo);
+                    command.Parameters.AddWithValue("@p2", baseBD.imalca_nuevo);
+                    command.Parameters.AddWithValue("@p3", baseBD.codreg);
+
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }
+
+                transaction.Commit();
+            }
+        }
+
+        public void ActualizarTipoDeConexion()
+        {
+            string query = "UPDATE tbl_base_facturacion " +
+                "SET imalca_nuevo = case when codtis = '2' then 0.0 else imalca_nuevo end, " +
+                "imagua_nuevo = case when codtis = '3' then 0.0 else imagua_nuevo end";
+                //"num_unidades = ( select count(f2.codcon) from tbl_base_facturacion f2 where tbl_base_facturacion.codcon = f2.codcon  group by f2.codcon)";
+               
+            SQLiteCommand command = new SQLiteCommand(query, Connection);
+
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public void ActualizarNumeroUnidades()
+        {
+            string query = "UPDATE tbl_base_facturacion " +
+                "SET num_unidades = ( select count(f2.codcon) from tbl_base_facturacion f2 where tbl_base_facturacion.codcon = f2.codcon  group by f2.codcon)";
+
+            SQLiteCommand command = new SQLiteCommand(query, Connection);
+
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public DataTable ObtenerTodaBase()
+        {
+            string SQL = "SELECT id,nuanio,nummes,codpeps,codamb,codloc,nomloc,nomusu,codcon,codudu,escone,codmed,codcat,nomcat,codtis,codmof,fleact,fleant,lecact,lecant,diflec,volfact,imcafi,imagua,imalca,nimagua,nimalca,nvol,imagua_nuevo,imalca_nuevo,num_unidades,volagua,volalca,ncargo FROM tbl_base_facturacion";
+            SQLiteCommand cmd = new SQLiteCommand(SQL, Connection);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable("base");
+            dt.Load(reader);
+            return dt;
+        }
     }
 }

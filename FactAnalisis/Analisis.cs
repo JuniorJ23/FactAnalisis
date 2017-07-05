@@ -122,7 +122,7 @@ namespace FactAnalisis
 
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
-                //lista = Procesamiento.Analisis(conexion, 3, lista);
+                lista = Procesamiento.Analisis(conexion, 3, lista);
                 lista = AgregarNumeroDeUnidadesDeUso(lista);
                 //conexion.ActualizarBase(lista);
                 
@@ -130,7 +130,7 @@ namespace FactAnalisis
                 sw.Stop();
 
                 TimeSpan elapsedTime = sw.Elapsed;
-                Console.WriteLine("Tiempo de demora en el Recorrer la lista y modificar solo algunos valores: " + elapsedTime.ToString());
+                Console.WriteLine("Tiempo de demora el Recorrer la lista y modificar solo algunos valores: " + elapsedTime.ToString());
 
 
             });
@@ -150,14 +150,48 @@ namespace FactAnalisis
 
         private List<BaseBD> AgregarNumeroDeUnidadesDeUso(List<BaseBD> lista)
         {
+            List<BaseBD> result = new List<BaseBD>();
             var groups = lista.GroupBy(x => new { x.codcon })
-                        .Select(group => new{Name = group.Key.codcon, Count = group.Count() });
+                        .Select(group => new{Name = group.Key.codcon, Count = group.Count() }).ToList();
 
-            foreach (var x in groups)
+            Console.WriteLine("Groups Size: " + groups.Count);
+
+            
+            /**foreach (var x in groups)
             {
-                Console.WriteLine(x.Count + " " + x.Name);
+                foreach(BaseBD obj in lista)
+                {
+                    if (x.Name.Equals(obj.codcon))
+                    {
+                        obj.num_unidades = x.Count;
+                    }
+                }
+            }**/
+
+      
+            /**
+            foreach (var pair in lista.Zip(groups, Tuple.Create))
+            {
+                if (pair.Item1.codcon.Equals(pair.Item2.Name))
+                {
+                    pair.Item1.num_unidades = pair.Item2.Count;
+                    result.Add(pair.Item1);
+                }
+                sizeUnion++;
             }
-            return lista;
+            **/
+
+            foreach(var grp in groups)
+                foreach(BaseBD bas in lista)
+                {
+                    if(string.Equals(grp.Name.Trim(), bas.codcon.Trim()))
+                    {
+                        bas.num_unidades = grp.Count;
+                        result.Add(bas);
+                    }
+                }
+            Console.WriteLine("Result Size: " + result.Count);
+            return result;
         }
     }
 }

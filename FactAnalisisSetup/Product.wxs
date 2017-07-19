@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define FactAnalisis_TargetDir=$(var.FactAnalisis.TargetDir)?>
+  <Product Id="827c2b60-79a4-4582-9c27-c1dccdb68831" Name="Analisis de Facturacion" Language="10" Version="1.0.0.0" Manufacturer="Andre Alvarado" UpgradeCode="dec439bc-cad6-478b-8c17-912b3a8c6f7a">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Languages="0,10" />
+    <MajorUpgrade DowngradeErrorMessage="Una nueva version de [ProductName] ya esta instalado." />
+    <MediaTemplate EmbedCab="yes" />
+    <Feature Id="ProductFeature" Title="Analisis de Facturacion" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="_x86_files" />
+      <ComponentGroupRef Id="_x64_files" />
+      <ComponentRef Id="ApplicationShortcut" />
+    </Feature>
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+    <Property Id="WIXUI_INSTALLDIR" Value="TARGETDIR" />
+    <UIRef Id="WixUI_InstallDir"/>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="827c2b60-79a4-4582-9c27-c1dccdb68831">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Analisis de Facturacion"
+                  Description="Aplicacion que permite el analisis de la base de facturacion, así como su exportacion al formato requerido"
+                  Target="[#FactAnalisis.exe]"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY">
+          <Icon Id="MyShortcutIcon" SourceFile="analysis.ico" />
+        </Shortcut>
+        <RemoveFolder Id="CleanUpShortCut" Directory="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\FactAnalisis" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>      
+           
+           
+           
+  </Product>
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="FactAnalisisSetup">
+          <Directory Id="_x64" Name="x64" />
+          <Directory Id="_x86" Name="x86" />
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Analisis de Facturacion"/>
+      </Directory>
+    </Directory>
+  </Fragment>
+  <Fragment>
+    
+   
+  
+    
+    
+    
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <Component Id="FactAnalisis.exe" Guid="c73af66a-be3f-46b9-b3ee-634d74c5208c">
+        <File Id="FactAnalisis.exe" Name="FactAnalisis.exe" Source="$(var.FactAnalisis_TargetDir)FactAnalisis.exe" />
+      </Component>
+      <Component Id="FactAnalisis.exe.config" Guid="f37dc532-0812-4881-9877-0bc87567d773">
+        <File Id="FactAnalisis.exe.config" Name="FactAnalisis.exe.config" Source="$(var.FactAnalisis_TargetDir)FactAnalisis.exe.config" />
+      </Component>
+      <Component Id="Devart.Data.dll" Guid="9460d49b-f4cb-46b1-b859-8de8d98217ba">
+        <File Id="Devart.Data.dll" Name="Devart.Data.dll" Source="$(var.FactAnalisis_TargetDir)Devart.Data.dll" />
+      </Component>
+      <Component Id="Devart.Data.SQLite.dll" Guid="32c6edae-e035-46a5-aa98-11e7c38f44ed">
+        <File Id="Devart.Data.SQLite.dll" Name="Devart.Data.SQLite.dll" Source="$(var.FactAnalisis_TargetDir)Devart.Data.SQLite.dll" />
+      </Component>
+      <Component Id="FileHelpers.dll" Guid="47d69280-521c-4d90-a0e3-31234caa3be4">
+        <File Id="FileHelpers.dll" Name="FileHelpers.dll" Source="$(var.FactAnalisis_TargetDir)FileHelpers.dll" />
+      </Component>
+      <Component Id="Npgsql.dll" Guid="dbe3907e-e849-4569-bb38-e915edc7bfe8">
+        <File Id="Npgsql.dll" Name="Npgsql.dll" Source="$(var.FactAnalisis_TargetDir)Npgsql.dll" />
+      </Component>
+      <Component Id="System.Threading.Tasks.Extensions.dll" Guid="691b929d-ffc7-4c54-8b73-056aea06d3bf">
+        <File Id="System.Threading.Tasks.Extensions.dll" Name="System.Threading.Tasks.Extensions.dll" Source="$(var.FactAnalisis_TargetDir)System.Threading.Tasks.Extensions.dll" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="_x86_files" Directory="_x86">
+      <Component Id="x86_sqlite3.dll" Guid="814a9140-8d92-4be3-a57f-32b7ae11ba2d">
+        <File Id="x86_sqlite3.dll" Name="sqlite3.dll" Source="$(var.FactAnalisis_TargetDir)x86\sqlite3.dll" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="_x64_files" Directory="_x64">
+      <Component Id="x64_sqlite3.dll" Guid="d7a7b9e0-2a43-4d3c-8d45-3e095ae2bad5">
+        <File Id="x64_sqlite3.dll" Name="sqlite3.dll" Source="$(var.FactAnalisis_TargetDir)x64\sqlite3.dll" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

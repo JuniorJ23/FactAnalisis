@@ -14,12 +14,28 @@ namespace FactAnalisis
 {
     public partial class ConfigurationForm : Office2007Form
     {
-
+        bool asPrincipal = false;
         Configuracion config;
-        public ConfigurationForm()
+        public ConfigurationForm(bool asPrincipal)
         {
+            this.asPrincipal = asPrincipal;
             InitializeComponent();
             config = Configuracion.Instance;
+
+            txtHost.Value = config.Server;
+            txtPuerto.Text = config.Port;
+            txtUsername.Text = config.Username;
+            txtPassword.Text = config.Password;
+   
+
+            if(string.IsNullOrEmpty(config.Port) || string.IsNullOrEmpty(config.Server) || string.IsNullOrEmpty(config.Password) || string.IsNullOrEmpty(config.Username))
+            {
+                btnAceptar.Enabled = false;
+            }
+            else
+            {
+                btnAceptar.Enabled = true;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -27,69 +43,113 @@ namespace FactAnalisis
             Close();
         }
 
-        private void btnRutaBD_Click(object sender, EventArgs e)
-        {
-            using (var fbd = new FolderBrowserDialog())
-            {
-                DialogResult result = fbd.ShowDialog();
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                {
-                    LimpiarValidacionDeCampos();
-                    txtRutaBD.Text = fbd.SelectedPath;
-                }
-            }
-        }
+       
 
-        private void btnRutaExport_Click(object sender, EventArgs e)
-        {
-            using (var fbd = new FolderBrowserDialog())
-            {
-                DialogResult result = fbd.ShowDialog();
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
-                {
-                    LimpiarValidacionDeCampos();
-                    txtRutaExport.Text = fbd.SelectedPath;
-                }
-            }
-        }
+     
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtRutaBD.Text))
+
+            if (string.IsNullOrEmpty(txtHost.Value))
             {
-                configFormValidator.ErrorProvider.SetError(txtRutaBD, "COMPLETE EL CAMPO DE RUTA DE LA BD.");
-                configFormValidator.Highlighter.SetHighlightColor(txtRutaBD, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
+                configFormValidator.ErrorProvider.SetError(txtHost, "COMPLETE EL CAMPO DE HOST.");
+                configFormValidator.Highlighter.SetHighlightColor(txtHost, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
                 return;
             }
 
-            if (string.IsNullOrEmpty(txtRutaExport.Text))
+            if (string.IsNullOrEmpty(txtPuerto.Text))
             {
-                configFormValidator.ErrorProvider.SetError(txtRutaExport, "COMPLETE EL CAMPO DE RUTA DE EXPORTACION DBF.");
-                configFormValidator.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
+                configFormValidator.ErrorProvider.SetError(txtPuerto, "COMPLETE EL CAMPO DE PUERTO.");
+                configFormValidator.Highlighter.SetHighlightColor(txtPuerto, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
                 return;
             }
+
+            if (string.IsNullOrEmpty(txtUsername.Text))
+            {
+                configFormValidator.ErrorProvider.SetError(txtUsername, "COMPLETE EL CAMPO DE USUARIO.");
+                configFormValidator.Highlighter.SetHighlightColor(txtUsername, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                configFormValidator.ErrorProvider.SetError(txtPassword, "COMPLETE EL CAMPO DE PASSWORD.");
+                configFormValidator.Highlighter.SetHighlightColor(txtPassword, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
+                return;
+            }
+
+
+           
 
             LimpiarValidacionDeCampos();
 
-            config.rutaSQLite = txtRutaBD.Text;
-            config.rutaExportDBF = txtRutaExport.Text;
+            
+            
 
             MessageBoxEx.EnableGlass = false;
-            DialogResult result = MessageBoxEx.Show(this, "Valores cargados correctamente", "Información del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            DialogResult result = MessageBoxEx.Show(this, "VALORES CARGADOS CORRECTAMENTE", "INFORMACION DEL SISTEMA", MessageBoxButtons.OKCancel, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             if (result == DialogResult.OK)
             {
-                Close();
+                if (asPrincipal)
+                {
+                    Close();
+                    new Principal().Show();
+                }
+                else { 
+                    Close();
+                }
+
             }
 
         }
 
         private void LimpiarValidacionDeCampos()
         {
-            configFormValidator.ErrorProvider.SetError(txtRutaBD, null);
-            configFormValidator.Highlighter.SetHighlightColor(txtRutaBD, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+            configFormValidator.ErrorProvider.SetError(txtHost, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtHost, DevComponents.DotNetBar.Validator.eHighlightColor.None);
 
-            configFormValidator.ErrorProvider.SetError(txtRutaExport, null);
-            configFormValidator.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+            configFormValidator.ErrorProvider.SetError(txtPuerto, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtPuerto, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+
+            configFormValidator.ErrorProvider.SetError(txtUsername, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtUsername, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+
+            configFormValidator.ErrorProvider.SetError(txtPassword, null);
+            configFormValidator.Highlighter.SetHighlightColor(txtPassword, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+
+           
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            LimpiarValidacionDeCampos();
+            config.Server = txtHost.Value;
+            config.Port = txtPuerto.Text;
+            config.Username = txtUsername.Text;
+            config.Password = txtPassword.Text;
+            try
+            {
+                ConexionPSQL psql = new ConexionPSQL();
+                MessageBoxEx.Show("CONEXION EXITOSA.");
+                btnAceptar.Enabled = true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                MessageBoxEx.Show("ERROR EN LA CONEXION.");
+            }
+            
+            
+        }
+
+        private void txtRutaExport_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRutaExport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

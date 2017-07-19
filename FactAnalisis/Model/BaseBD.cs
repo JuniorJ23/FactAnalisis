@@ -40,9 +40,9 @@ namespace FactAnalisis.Model
 
         public String codmof { get; set; }
 
-        public DateTime fleact { get; set; }
+        public DateTime? fleact { get; set; }
 
-        public DateTime fleant { get; set; }
+        public DateTime? fleant { get; set; }
 
         public int lecact { get; set; }
 

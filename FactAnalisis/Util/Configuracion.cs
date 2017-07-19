@@ -11,15 +11,18 @@ namespace FactAnalisis.Util
         private static Configuracion instance = null;
         private static readonly object padlock = new object();
 
-
-        public string rutaSQLite { get; set; }
-        public string rutaExportDBF { get; set; }
+        public string Server { get; set; }
+        public string Port { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
 
         Configuracion()
         {
-            rutaSQLite = "";
-            rutaExportDBF = "";
+            Server = "127.0.0.1";
+            Port = "5786";
+            Username = "postgres";
+            Password = "123456";
         }
 
         public static Configuracion Instance

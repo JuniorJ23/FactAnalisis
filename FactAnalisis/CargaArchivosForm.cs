@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ namespace FactAnalisis
             {
                 Filter = "CSV files (*.csv)|*.csv",
                 InitialDirectory = @"C:\",
-                Title = "Por favor, seleccione el archivo de Facturación Bruta."
+                Title = "INNCODE || ---> SELECCIONE EL ARCHIVO"
             };
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -49,6 +50,11 @@ namespace FactAnalisis
                     txtRutaFactBruta.Text = "";
                   MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO REGISTRO ERROR: " + ex.LineNumber , 
                        "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }catch(IOException ex)
+                {
+                    txtRutaFactBruta.Text = "";
+                    MessageBoxEx.Show(this, "NO SE PUEDE TENER ACCESO AL ARCHIVO PORQUE ESTÁ SIENDO UTILIZADO POR OTRO POGRAMA.\n" + ex.Message,
+                         "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -77,6 +83,12 @@ namespace FactAnalisis
                     MessageBoxEx.Show(this, "ERROR AL PROCESAR ARCHIVO. PUEDE QUE SE DEBA A QUE ALGUNA DE LA COLUMNAS TENGAN UN CARACTER '|' DE MAS.\nPOR FAVOR PONGASE EN CONTACTO CON OFIN.\n" + ex.Message + "\nNUMERO DE FILA CON ERROR: " + ex.LineNumber,
                          "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                catch (IOException ex)
+                {
+                    txtRutaNotas.Text = "";
+                    MessageBoxEx.Show(this, "NO SE PUEDE TENER ACCESO AL ARCHIVO PORQUE ESTÁ SIENDO UTILIZADO POR OTRO POGRAMA.\n" + ex.Message,
+                         "ERROR DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
         }
@@ -99,12 +111,20 @@ namespace FactAnalisis
                 return;
             }
 
+            if (String.IsNullOrEmpty(txtRutaExport.Text))
+            {
+                validatorCargaForm.ErrorProvider.SetError(txtRutaExport, "Complete el campo de exportación de DBF");
+                validatorCargaForm.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.Orange);
+                return;
+            }
+
             LimpiarValidacionDeCampos();
            
             archivosFact.rutaFactBruta = txtRutaFactBruta.Text;
             archivosFact.rutaNotas = txtRutaNotas.Text;
+            archivosFact.RutaExportDBF = txtRutaExport.Text;
            
-            DialogResult result = MessageBoxEx.Show(this,"Valores cargados correctamente","Información del sistema",MessageBoxButtons.OKCancel,MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            DialogResult result = MessageBoxEx.Show(this,"VALORES CARGADOS CORRECTAMENTE","INFORMACION DEL SISTEMA",MessageBoxButtons.OKCancel,MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             if(result == DialogResult.OK)
             {
                 Close();
@@ -120,6 +140,22 @@ namespace FactAnalisis
 
             validatorCargaForm.ErrorProvider.SetError(txtRutaNotas, null);
             validatorCargaForm.Highlighter.SetHighlightColor(txtRutaNotas, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+
+            validatorCargaForm.ErrorProvider.SetError(txtRutaExport, null);
+            validatorCargaForm.Highlighter.SetHighlightColor(txtRutaExport, DevComponents.DotNetBar.Validator.eHighlightColor.None);
+        }
+
+        private void btnRutaExport_Click(object sender, EventArgs e)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    LimpiarValidacionDeCampos();
+                    txtRutaExport.Text = fbd.SelectedPath;
+                }
+            }
         }
     }
 }

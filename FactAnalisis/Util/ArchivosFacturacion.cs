@@ -14,15 +14,17 @@ namespace FactAnalisis.Util
 
         public string rutaFactBruta { get; set; } 
         public string rutaNotas { get; set; }
+        public string RutaExportDBF { get; set; }
 
-        public bool insertadasEnBD { get; set; } = false;
-        public bool notasInsertadasEnBD { get; set; } = false;
+        public bool GenerarFacturacinBruta { get; set; } = false;
+        public bool GenerarFacturacionNeta { get; set; } = false;
 
 
         ArchivosFacturacion()
         {
             rutaFactBruta = "";
             rutaNotas = "";
+            RutaExportDBF = "";
         }
 
          public static ArchivosFacturacion Instance

@@ -42,13 +42,16 @@
             this.validatorCargaForm = new DevComponents.DotNetBar.Validator.SuperValidator();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.highlighter1 = new DevComponents.DotNetBar.Validator.Highlighter();
+            this.btnRutaExport = new DevComponents.DotNetBar.ButtonX();
+            this.txtRutaExport = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.lblRutaExport = new DevComponents.DotNetBar.LabelX();
             this.gpArchivos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Windows7Blue;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Blue;
             // 
             // lblFactBruta
             // 
@@ -61,7 +64,7 @@
             this.lblFactBruta.Name = "lblFactBruta";
             this.lblFactBruta.Size = new System.Drawing.Size(130, 21);
             this.lblFactBruta.TabIndex = 0;
-            this.lblFactBruta.Text = "Facturación Bruta (.csv):";
+            this.lblFactBruta.Text = "FACT. BRUTA (.csv):";
             // 
             // lblNotas
             // 
@@ -74,12 +77,15 @@
             this.lblNotas.Name = "lblNotas";
             this.lblNotas.Size = new System.Drawing.Size(130, 19);
             this.lblNotas.TabIndex = 1;
-            this.lblNotas.Text = "Notas (.csv):";
+            this.lblNotas.Text = "NOTAS (.csv):";
             // 
             // gpArchivos
             // 
             this.gpArchivos.CanvasColor = System.Drawing.SystemColors.Control;
             this.gpArchivos.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.gpArchivos.Controls.Add(this.btnRutaExport);
+            this.gpArchivos.Controls.Add(this.txtRutaExport);
+            this.gpArchivos.Controls.Add(this.lblRutaExport);
             this.gpArchivos.Controls.Add(this.btnAceptar);
             this.gpArchivos.Controls.Add(this.btnCargarNotas);
             this.gpArchivos.Controls.Add(this.btnCargarFactBruta);
@@ -122,13 +128,13 @@
             this.gpArchivos.StyleMouseOver.Class = "";
             this.gpArchivos.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpArchivos.TabIndex = 2;
-            this.gpArchivos.Text = "Archivos";
+            this.gpArchivos.Text = "ARCHIVOS";
             // 
             // btnAceptar
             // 
             this.btnAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAceptar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnAceptar.Location = new System.Drawing.Point(708, 107);
+            this.btnAceptar.Location = new System.Drawing.Point(708, 118);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -157,7 +163,7 @@
             this.btnCargarFactBruta.Name = "btnCargarFactBruta";
             this.btnCargarFactBruta.Size = new System.Drawing.Size(75, 21);
             this.btnCargarFactBruta.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
-            this.btnCargarFactBruta.TabIndex = 4;
+            this.btnCargarFactBruta.TabIndex = 0;
             this.btnCargarFactBruta.Tooltip = "Seleccionar ruta del archivo de Facturación bruta.";
             this.btnCargarFactBruta.Click += new System.EventHandler(this.btnCargarFactBruta_Click);
             // 
@@ -204,6 +210,45 @@
             // 
             this.highlighter1.ContainerControl = this;
             // 
+            // btnRutaExport
+            // 
+            this.btnRutaExport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRutaExport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnRutaExport.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
+            this.btnRutaExport.Location = new System.Drawing.Point(708, 78);
+            this.btnRutaExport.Name = "btnRutaExport";
+            this.btnRutaExport.Size = new System.Drawing.Size(75, 23);
+            this.btnRutaExport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnRutaExport.TabIndex = 9;
+            this.btnRutaExport.Click += new System.EventHandler(this.btnRutaExport_Click);
+            // 
+            // txtRutaExport
+            // 
+            // 
+            // 
+            // 
+            this.txtRutaExport.Border.Class = "TextBoxBorder";
+            this.txtRutaExport.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtRutaExport.Location = new System.Drawing.Point(139, 83);
+            this.txtRutaExport.Name = "txtRutaExport";
+            this.txtRutaExport.ReadOnly = true;
+            this.txtRutaExport.Size = new System.Drawing.Size(544, 20);
+            this.txtRutaExport.TabIndex = 8;
+            this.txtRutaExport.WatermarkText = "RUTA A EXPORTAR EL ARCHIVO .DBF";
+            // 
+            // lblRutaExport
+            // 
+            // 
+            // 
+            // 
+            this.lblRutaExport.BackgroundStyle.Class = "";
+            this.lblRutaExport.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblRutaExport.Location = new System.Drawing.Point(1, 83);
+            this.lblRutaExport.Name = "lblRutaExport";
+            this.lblRutaExport.Size = new System.Drawing.Size(132, 21);
+            this.lblRutaExport.TabIndex = 7;
+            this.lblRutaExport.Text = "RUTA EXPORTAR DBF:";
+            // 
             // CargaArchivosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,12 +257,13 @@
             this.Controls.Add(this.gpArchivos);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CargaArchivosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Carga de Archivos (.csv)";
+            this.Text = "CARGA DE ARCHIVOS (.csv)";
             this.gpArchivos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -238,5 +284,8 @@
         private DevComponents.DotNetBar.Validator.SuperValidator validatorCargaForm;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private DevComponents.DotNetBar.Validator.Highlighter highlighter1;
+        private DevComponents.DotNetBar.ButtonX btnRutaExport;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtRutaExport;
+        private DevComponents.DotNetBar.LabelX lblRutaExport;
     }
 }

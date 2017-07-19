@@ -10,6 +10,7 @@ namespace FactAnalisis
 {
     static class Program
     {
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -19,18 +20,16 @@ namespace FactAnalisis
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new SplashScreen());
         }
 
         static void OnProcessExit(object sender, EventArgs e)
         {
-            Configuracion config = Configuracion.Instance;
-            if (!string.IsNullOrEmpty(config.rutaSQLite))
-            {
-                ConexionSQLite conexion = new ConexionSQLite(Path.Combine(config.rutaSQLite,"facturacion.db"));
-                conexion.LimpiarTablasBaseYNotas();
-            }
+            
             
         }
+
+
+       
     }
 }

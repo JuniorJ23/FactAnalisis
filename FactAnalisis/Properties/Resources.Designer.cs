@@ -153,6 +153,16 @@ namespace FactAnalisis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap table {
+            get {
+                object obj = ResourceManager.GetObject("table", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tools_and_utensils {
             get {
                 object obj = ResourceManager.GetObject("tools-and-utensils", resourceCulture);

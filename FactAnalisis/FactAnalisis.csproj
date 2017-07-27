@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>FACTANALISIS</ProductName>
     <PublisherName>ANDRE ALVARADO APONTE</PublisherName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -125,8 +125,15 @@
     <Compile Include="ConfigurationForm.Designer.cs">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstructuraTarifaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructuraTarifaria.Designer.cs">
+      <DependentUpon>EstructuraTarifaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\BaseBD.cs" />
     <Compile Include="Model\BaseCSV.cs" />
+    <Compile Include="Model\EstructuraTarifaria.cs" />
     <Compile Include="Model\NotasCSV.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -159,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigurationForm.resx">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructuraTarifaria.resx">
+      <DependentUpon>EstructuraTarifaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -295,6 +305,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\log2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

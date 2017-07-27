@@ -114,5 +114,25 @@ namespace FactAnalisis
         {
             Application.Exit();
         }
+
+        private void btnEstructuraTarif_Click(object sender, EventArgs e)
+        {
+            FormCollection fc = Application.OpenForms;
+            bool FormFound = false;
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "EstructuraTarifaria")
+                {
+                    frm.Focus();
+                    FormFound = true;
+                }
+            }
+            if (FormFound == false)
+            {
+                EstructuraTarifaria myForm = new EstructuraTarifaria();
+                myForm.MdiParent = this;
+                myForm.Show();
+            }
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace FactAnalisis
             archivosFact = ArchivosFacturacion.Instance;
             txtRutaFactBruta.Text = archivosFact.rutaFactBruta;
             txtRutaNotas.Text = archivosFact.rutaNotas;
+            txtRutaExport.Text = archivosFact.RutaExportDBF;
             btnCargarFactBruta.Focus();
             MessageBoxEx.EnableGlass = false;
 

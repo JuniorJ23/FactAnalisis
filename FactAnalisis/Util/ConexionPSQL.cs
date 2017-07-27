@@ -48,6 +48,35 @@ namespace FactAnalisis.Util
 
 
 
+        public List<EstructuraTarifariaModel> ObtenerEstructurasTarifarias(int grupo, int periodo)
+        {
+            List<EstructuraTarifariaModel> result = new List<EstructuraTarifariaModel>();
+
+            string SQL = "SELECT est.ID, est.id_grupo, est.id_categoria, est.id_rango,est.id_periodo, period.cargo_fijo, est.agua, est.alcantarillado FROM tbl_est_tarif est INNER JOIN tbl_periodo period ON period.\"id\" = est.id_periodo WHERE est.id_grupo =" + grupo + " AND est.id_periodo = " + periodo;
+            NpgsqlCommand command = new NpgsqlCommand(SQL, Connection);
+            using (NpgsqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    EstructuraTarifariaModel estructTarif = new EstructuraTarifariaModel()
+                    {
+                        ID = Int32.Parse(reader[0].ToString()),
+                        IDGrupo = Int32.Parse(reader[1].ToString()),
+                        IDCategoria = Int32.Parse(reader[2].ToString()),
+                        IDRango = Int32.Parse(reader[3].ToString()),
+                        IDPeriodo = Int32.Parse(reader[4].ToString()),
+                        CargoFijo = Double.Parse(reader[5].ToString()),
+                        Agua = Double.Parse(reader[6].ToString()),
+                        Alcantarillado = Double.Parse(reader[7].ToString())
+                    };
+                    result.Add(estructTarif);
+                }
+            }
+
+            return result;
+        }
+
+
         public void InsertarRegistrosEnBaseFacturacion(BaseCSV[] basesCSV)
         {
             NpgsqlCommand command = new NpgsqlCommand("", Connection);

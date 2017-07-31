@@ -20,7 +20,7 @@ namespace FactAnalisis.Util
         Configuracion()
         {
             Server = "127.0.0.1";
-            Port = "5786";
+            Port = "5432";
             Username = "postgres";
             Password = "123456";
         }

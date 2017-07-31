@@ -42,7 +42,10 @@
             this.dockSite3 = new DevComponents.DotNetBar.DockSite();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
+            this.btnCargarArchivos = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
+            this.btnAnalisis = new DevComponents.DotNetBar.ButtonItem();
+            this.btnEstructuraTarif = new DevComponents.DotNetBar.ButtonItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblConexion = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -52,9 +55,6 @@
             this.lblValuePort = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.btnChangeConfig = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnCargarArchivos = new DevComponents.DotNetBar.ButtonItem();
-            this.btnAnalisis = new DevComponents.DotNetBar.ButtonItem();
-            this.btnEstructuraTarif = new DevComponents.DotNetBar.ButtonItem();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,6 +219,15 @@
             this.itemContainer1.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnCargarArchivos});
             // 
+            // btnCargarArchivos
+            // 
+            this.btnCargarArchivos.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnCargarArchivos.FontBold = true;
+            this.btnCargarArchivos.Image = global::FactAnalisis.Properties.Resources.delivery_cart2;
+            this.btnCargarArchivos.Name = "btnCargarArchivos";
+            this.btnCargarArchivos.Text = "Cargar Archivos";
+            this.btnCargarArchivos.Click += new System.EventHandler(this.buttonItem1_Click);
+            // 
             // itemContainer2
             // 
             // 
@@ -230,6 +239,24 @@
             this.itemContainer2.Name = "itemContainer2";
             this.itemContainer2.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnAnalisis});
+            // 
+            // btnAnalisis
+            // 
+            this.btnAnalisis.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnAnalisis.FontBold = true;
+            this.btnAnalisis.Image = global::FactAnalisis.Properties.Resources.analysis;
+            this.btnAnalisis.Name = "btnAnalisis";
+            this.btnAnalisis.Text = "Análisis";
+            this.btnAnalisis.Click += new System.EventHandler(this.btnAnalisis_Click);
+            // 
+            // btnEstructuraTarif
+            // 
+            this.btnEstructuraTarif.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnEstructuraTarif.FontBold = true;
+            this.btnEstructuraTarif.Image = global::FactAnalisis.Properties.Resources.table;
+            this.btnEstructuraTarif.Name = "btnEstructuraTarif";
+            this.btnEstructuraTarif.Text = "Estructura Tarifaria";
+            this.btnEstructuraTarif.Click += new System.EventHandler(this.btnEstructuraTarif_Click);
             // 
             // statusStrip1
             // 
@@ -259,7 +286,7 @@
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.ForestGreen;
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(78, 17);
+            this.lblStatus.Size = new System.Drawing.Size(77, 17);
             this.lblStatus.Text = "CONECTADO";
             // 
             // lblHost
@@ -304,33 +331,6 @@
             this.btnChangeConfig.Text = "CAMBIAR CONFIGURACION";
             this.btnChangeConfig.Click += new System.EventHandler(this.btnChangeConfig_Click);
             // 
-            // btnCargarArchivos
-            // 
-            this.btnCargarArchivos.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnCargarArchivos.FontBold = true;
-            this.btnCargarArchivos.Image = global::FactAnalisis.Properties.Resources.delivery_cart2;
-            this.btnCargarArchivos.Name = "btnCargarArchivos";
-            this.btnCargarArchivos.Text = "Cargar Archivos";
-            this.btnCargarArchivos.Click += new System.EventHandler(this.buttonItem1_Click);
-            // 
-            // btnAnalisis
-            // 
-            this.btnAnalisis.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnAnalisis.FontBold = true;
-            this.btnAnalisis.Image = global::FactAnalisis.Properties.Resources.analysis;
-            this.btnAnalisis.Name = "btnAnalisis";
-            this.btnAnalisis.Text = "Análisis";
-            this.btnAnalisis.Click += new System.EventHandler(this.btnAnalisis_Click);
-            // 
-            // btnEstructuraTarif
-            // 
-            this.btnEstructuraTarif.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnEstructuraTarif.FontBold = true;
-            this.btnEstructuraTarif.Image = global::FactAnalisis.Properties.Resources.table;
-            this.btnEstructuraTarif.Name = "btnEstructuraTarif";
-            this.btnEstructuraTarif.Text = "Estructura Tarifaria";
-            this.btnEstructuraTarif.Click += new System.EventHandler(this.btnEstructuraTarif_Click);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,14 +348,15 @@
             this.Controls.Add(this.dockSite8);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Principal";
             this.Text = "ANÁLISIS FACTURACIÓN NETA";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Principal_FormClosed);
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

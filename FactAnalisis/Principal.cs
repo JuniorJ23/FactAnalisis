@@ -134,5 +134,13 @@ namespace FactAnalisis
                 myForm.Show();
             }
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
+        }
     }
 }

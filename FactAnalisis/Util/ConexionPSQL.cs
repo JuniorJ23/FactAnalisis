@@ -76,6 +76,45 @@ namespace FactAnalisis.Util
             return result;
         }
 
+        public Periodo ObtenerUltimoPeriodo()
+        {
+            Periodo periodo = new Periodo();
+            string SQL = "select * from tbl_periodo where id = (select max(id) from tbl_periodo)";
+            NpgsqlCommand command = new NpgsqlCommand(SQL, Connection);
+            using (NpgsqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    periodo.ID = Int32.Parse(reader[0].ToString());
+                    periodo.Desc = reader[1].ToString();
+                    periodo.CargoFijo = Double.Parse(reader[2].ToString());
+                }
+            }
+            return periodo;
+        }
+
+
+        public List<Periodo> ObtenerTodosPeriodos()
+        {
+            List<Periodo> result = new List<Periodo>();
+            string SQL = "select * from tbl_periodo";
+            NpgsqlCommand command = new NpgsqlCommand(SQL, Connection);
+            using (NpgsqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    Periodo periodo = new Periodo()
+                    {
+                        ID = Int32.Parse(reader[0].ToString()),
+                        Desc = reader[1].ToString(),
+                        CargoFijo = Double.Parse(reader[2].ToString())
+                    };
+                    result.Add(periodo);
+                }
+            }
+            return result;
+        }
+
 
         public void InsertarRegistrosEnBaseFacturacion(BaseCSV[] basesCSV)
         {

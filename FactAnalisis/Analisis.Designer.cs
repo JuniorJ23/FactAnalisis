@@ -333,7 +333,7 @@
             // 
             // item8
             // 
-            this.item8.Text = "Usuarios Con Volumen Y SinImportes";
+            this.item8.Text = "Usuarios Con Volumen Y sin Importes";
             // 
             // item9
             // 

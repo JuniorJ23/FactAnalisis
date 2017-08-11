@@ -284,8 +284,16 @@ namespace FactAnalisis.Util
                         }
                         break;
                 }
-                
+                if (baseBD.imagua_nuevo < 0)
+                {
+                    baseBD.imagua_nuevo = 0;
+                }
+                if (baseBD.imalca_nuevo < 0)
+                {
+                    baseBD.imalca_nuevo = 0;
+                }
             }
+            
             return bases;
         }
 

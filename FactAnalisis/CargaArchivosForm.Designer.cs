@@ -34,6 +34,9 @@
             this.lblFactBruta = new DevComponents.DotNetBar.LabelX();
             this.lblNotas = new DevComponents.DotNetBar.LabelX();
             this.gpArchivos = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnRutaExport = new DevComponents.DotNetBar.ButtonX();
+            this.txtRutaExport = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.lblRutaExport = new DevComponents.DotNetBar.LabelX();
             this.btnAceptar = new DevComponents.DotNetBar.ButtonX();
             this.btnCargarNotas = new DevComponents.DotNetBar.ButtonX();
             this.btnCargarFactBruta = new DevComponents.DotNetBar.ButtonX();
@@ -42,9 +45,6 @@
             this.validatorCargaForm = new DevComponents.DotNetBar.Validator.SuperValidator();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.highlighter1 = new DevComponents.DotNetBar.Validator.Highlighter();
-            this.btnRutaExport = new DevComponents.DotNetBar.ButtonX();
-            this.txtRutaExport = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.lblRutaExport = new DevComponents.DotNetBar.LabelX();
             this.gpArchivos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -130,6 +130,45 @@
             this.gpArchivos.TabIndex = 2;
             this.gpArchivos.Text = "ARCHIVOS";
             // 
+            // btnRutaExport
+            // 
+            this.btnRutaExport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRutaExport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnRutaExport.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
+            this.btnRutaExport.Location = new System.Drawing.Point(708, 78);
+            this.btnRutaExport.Name = "btnRutaExport";
+            this.btnRutaExport.Size = new System.Drawing.Size(75, 23);
+            this.btnRutaExport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnRutaExport.TabIndex = 9;
+            this.btnRutaExport.Click += new System.EventHandler(this.btnRutaExport_Click);
+            // 
+            // txtRutaExport
+            // 
+            // 
+            // 
+            // 
+            this.txtRutaExport.Border.Class = "TextBoxBorder";
+            this.txtRutaExport.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtRutaExport.Location = new System.Drawing.Point(139, 85);
+            this.txtRutaExport.Name = "txtRutaExport";
+            this.txtRutaExport.ReadOnly = true;
+            this.txtRutaExport.Size = new System.Drawing.Size(544, 20);
+            this.txtRutaExport.TabIndex = 8;
+            this.txtRutaExport.WatermarkText = "RUTA A EXPORTAR EL ARCHIVO .DBF";
+            // 
+            // lblRutaExport
+            // 
+            // 
+            // 
+            // 
+            this.lblRutaExport.BackgroundStyle.Class = "";
+            this.lblRutaExport.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblRutaExport.Location = new System.Drawing.Point(1, 83);
+            this.lblRutaExport.Name = "lblRutaExport";
+            this.lblRutaExport.Size = new System.Drawing.Size(132, 21);
+            this.lblRutaExport.TabIndex = 7;
+            this.lblRutaExport.Text = "RUTA EXPORTAR DBF:";
+            // 
             // btnAceptar
             // 
             this.btnAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -209,45 +248,6 @@
             // highlighter1
             // 
             this.highlighter1.ContainerControl = this;
-            // 
-            // btnRutaExport
-            // 
-            this.btnRutaExport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnRutaExport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnRutaExport.Image = global::FactAnalisis.Properties.Resources.cloud_computing;
-            this.btnRutaExport.Location = new System.Drawing.Point(708, 78);
-            this.btnRutaExport.Name = "btnRutaExport";
-            this.btnRutaExport.Size = new System.Drawing.Size(75, 23);
-            this.btnRutaExport.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnRutaExport.TabIndex = 9;
-            this.btnRutaExport.Click += new System.EventHandler(this.btnRutaExport_Click);
-            // 
-            // txtRutaExport
-            // 
-            // 
-            // 
-            // 
-            this.txtRutaExport.Border.Class = "TextBoxBorder";
-            this.txtRutaExport.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtRutaExport.Location = new System.Drawing.Point(139, 83);
-            this.txtRutaExport.Name = "txtRutaExport";
-            this.txtRutaExport.ReadOnly = true;
-            this.txtRutaExport.Size = new System.Drawing.Size(544, 20);
-            this.txtRutaExport.TabIndex = 8;
-            this.txtRutaExport.WatermarkText = "RUTA A EXPORTAR EL ARCHIVO .DBF";
-            // 
-            // lblRutaExport
-            // 
-            // 
-            // 
-            // 
-            this.lblRutaExport.BackgroundStyle.Class = "";
-            this.lblRutaExport.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblRutaExport.Location = new System.Drawing.Point(1, 83);
-            this.lblRutaExport.Name = "lblRutaExport";
-            this.lblRutaExport.Size = new System.Drawing.Size(132, 21);
-            this.lblRutaExport.TabIndex = 7;
-            this.lblRutaExport.Text = "RUTA EXPORTAR DBF:";
             // 
             // CargaArchivosForm
             // 

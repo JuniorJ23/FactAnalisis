@@ -18,6 +18,7 @@ namespace FactAnalisis
     public partial class CargaArchivosForm : Office2007Form
     {
         ArchivosFacturacion archivosFact;
+        String inDir = @"C:\";
         public CargaArchivosForm()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace FactAnalisis
             txtRutaExport.Text = archivosFact.RutaExportDBF;
             btnCargarFactBruta.Focus();
             MessageBoxEx.EnableGlass = false;
+            
 
         }
 
@@ -35,13 +37,16 @@ namespace FactAnalisis
             OpenFileDialog openFileDialog = new OpenFileDialog()
             {
                 Filter = "CSV files (*.csv)|*.csv",
-                InitialDirectory = @"C:\",
+                InitialDirectory = inDir,
                 Title = "INNCODE || ---> SELECCIONE EL ARCHIVO"
             };
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 LimpiarValidacionDeCampos();
                 txtRutaFactBruta.Text = openFileDialog.FileName;
+                string fullPath = openFileDialog.FileName;
+                inDir = @fullPath.Substring(0, fullPath.LastIndexOf('\\'));
+                txtRutaExport.Text = inDir;
 
                 try { 
                     var engine = new DelimitedFileEngine<BaseCSV>();
@@ -65,13 +70,17 @@ namespace FactAnalisis
             OpenFileDialog openFileDialog = new OpenFileDialog()
             {
                 Filter = "CSV files (*.csv)|*.csv",
-                InitialDirectory = @"C:\",
+                InitialDirectory = inDir,
                 Title = "Por favor, seleccione el archivo de Notas."
             };
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 LimpiarValidacionDeCampos();
                 txtRutaNotas.Text = openFileDialog.FileName;
+                string fullPath = openFileDialog.FileName;
+                inDir = @fullPath.Substring(0, fullPath.LastIndexOf('\\'));
+                txtRutaExport.Text = inDir;
+
                 try
                 {
                     var engine = new FileHelperEngine<NotasCSV>();

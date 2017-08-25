@@ -432,7 +432,7 @@ namespace FactAnalisis
 
         private void CargarGrupoF(int periodo)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void CargarGrupoG(int periodo)

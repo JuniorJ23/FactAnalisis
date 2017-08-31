@@ -23,7 +23,6 @@ namespace FactAnalisis
         {
             InitializeComponent();
 
-            estructs = new List<EstructuraTarifariaModel>();
             conexion = new ConexionPSQL();
 
             periodos = conexion.ObtenerTodosPeriodos();
@@ -39,46 +38,15 @@ namespace FactAnalisis
             Console.WriteLine("Ultimo Periodo: "+  UltimoPeriodo.Desc);
             cmbPeriodos.SelectedValue = UltimoPeriodo.ID;
 
-      
+            estructs = new List<EstructuraTarifariaModel>();
             CargarGrupoA(UltimoPeriodo.ID);
             dICargoFijoEstA.Value = UltimoPeriodo.CargoFijo;
         }
 
         private void superTabControl1_SelectedTabChanged(object sender, SuperTabStripSelectedTabChangedEventArgs e)
         {
-
             Periodo selectedPeriodo = cmbPeriodos.SelectedItem as Periodo;
-
-            switch (superTabControl1.SelectedTabIndex)
-            {
-                case 0:
-                    CargarGrupoA(selectedPeriodo.ID);
-                    break;
-                case 1:
-                    CargarGrupoB(selectedPeriodo.ID);
-                    break;
-                case 2:
-                    CargarGrupoC(selectedPeriodo.ID);
-                    break;
-                case 3:
-                    CargarGrupoD(selectedPeriodo.ID);
-                    break;
-                case 4:
-                    CargarGrupoE(selectedPeriodo.ID);
-                    break;
-                case 5:
-                    CargarGrupoF(selectedPeriodo.ID);
-                    break;
-                case 6:
-                    CargarGrupoG(selectedPeriodo.ID);
-                    break;
-                case 7:
-                    CargarGrupoH(selectedPeriodo.ID);
-                    break;
-                default:
-                    CargarGrupoA(selectedPeriodo.ID);
-                    break;
-            }
+            loadGroup(superTabControl1.SelectedTabIndex);
         }
 
         
@@ -577,35 +545,40 @@ namespace FactAnalisis
         {
             Periodo periodoSelected = cmbPeriodos.SelectedItem as Periodo;
             dICargoFijoEstA.Value = periodoSelected.CargoFijo;
+            loadGroup(periodoSelected.ID);
+            
+        }
 
+        public void loadGroup (int group)
+        {
             switch (superTabControl1.SelectedTabIndex)
             {
                 case 0:
-                    CargarGrupoA(periodoSelected.ID);
+                    CargarGrupoA(group);
                     break;
                 case 1:
-                    CargarGrupoB(periodoSelected.ID);
+                    CargarGrupoB(group);
                     break;
                 case 2:
-                    CargarGrupoC(periodoSelected.ID);
+                    CargarGrupoC(group);
                     break;
                 case 3:
-                    CargarGrupoD(periodoSelected.ID);
+                    CargarGrupoD(group);
                     break;
                 case 4:
-                    CargarGrupoE(periodoSelected.ID);
+                    CargarGrupoE(group);
                     break;
                 case 5:
-                    CargarGrupoF(periodoSelected.ID);
+                    CargarGrupoF(group);
                     break;
                 case 6:
-                    CargarGrupoG(periodoSelected.ID);
+                    CargarGrupoG(group);
                     break;
                 case 7:
-                    CargarGrupoH(periodoSelected.ID);
+                    CargarGrupoH(group);
                     break;
                 default:
-                    CargarGrupoA(periodoSelected.ID);
+                    CargarGrupoA(group);
                     break;
             }
         }

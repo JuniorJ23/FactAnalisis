@@ -30,6 +30,72 @@
         {
             this.components = new System.ComponentModel.Container();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel5 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.labelX82 = new DevComponents.DotNetBar.LabelX();
+            this.labelX83 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel25 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_Social_10_A_Mas_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Social_0_10_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Social_10_A_Mas_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Social_0_10_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX84 = new DevComponents.DotNetBar.LabelX();
+            this.labelX85 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel26 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_Est_150_mas_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Est_150_mas_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Est_50_150_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Est_50_150_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Est_0_50_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Est_0_50_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX86 = new DevComponents.DotNetBar.LabelX();
+            this.labelX87 = new DevComponents.DotNetBar.LabelX();
+            this.labelX88 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel27 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_Dom1_25_mas_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Dom1_25_mas_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Dom1_8_25_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Dom1_8_25_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Dom1_0_8_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Dom1_0_8_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX89 = new DevComponents.DotNetBar.LabelX();
+            this.labelX90 = new DevComponents.DotNetBar.LabelX();
+            this.labelX91 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel28 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_Ind_150_mas_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Ind_150_mas_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Ind_50_150_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Ind_50_150_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Ind_0_50_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Ind_0_50_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX92 = new DevComponents.DotNetBar.LabelX();
+            this.labelX93 = new DevComponents.DotNetBar.LabelX();
+            this.labelX94 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel29 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_100_mas_Dom2_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_100_mas_Dom2_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_25_100_Dom2_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_25_100_Dom2_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_8_25_Dom2_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_8_25_Dom2_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_0_8_Dom2_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_0_8_Dom2_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX95 = new DevComponents.DotNetBar.LabelX();
+            this.labelX96 = new DevComponents.DotNetBar.LabelX();
+            this.labelX97 = new DevComponents.DotNetBar.LabelX();
+            this.labelX98 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel30 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dI_E_Com_150_mas_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Com_150_mas_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Com_50_150_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Com_50_150_Agua = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Com_0_50_Alc = new DevComponents.Editors.DoubleInput();
+            this.dI_E_Com_0_50_Agua = new DevComponents.Editors.DoubleInput();
+            this.labelX99 = new DevComponents.DotNetBar.LabelX();
+            this.labelX100 = new DevComponents.DotNetBar.LabelX();
+            this.labelX101 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem5 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel6 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.superTabItem6 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -158,72 +224,6 @@
             this.labelX31 = new DevComponents.DotNetBar.LabelX();
             this.labelX32 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel6 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabItem6 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel5 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.labelX82 = new DevComponents.DotNetBar.LabelX();
-            this.labelX83 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel25 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_Social_10_A_Mas_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Social_0_10_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Social_10_A_Mas_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Social_0_10_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX84 = new DevComponents.DotNetBar.LabelX();
-            this.labelX85 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel26 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_Est_150_mas_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Est_150_mas_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Est_50_150_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Est_50_150_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Est_0_50_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Est_0_50_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX86 = new DevComponents.DotNetBar.LabelX();
-            this.labelX87 = new DevComponents.DotNetBar.LabelX();
-            this.labelX88 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel27 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_Dom1_25_mas_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Dom1_25_mas_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Dom1_8_25_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Dom1_8_25_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Dom1_0_8_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Dom1_0_8_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX89 = new DevComponents.DotNetBar.LabelX();
-            this.labelX90 = new DevComponents.DotNetBar.LabelX();
-            this.labelX91 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel28 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_Ind_150_mas_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Ind_150_mas_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Ind_50_150_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Ind_50_150_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Ind_0_50_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Ind_0_50_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX92 = new DevComponents.DotNetBar.LabelX();
-            this.labelX93 = new DevComponents.DotNetBar.LabelX();
-            this.labelX94 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel29 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_100_mas_Dom2_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_100_mas_Dom2_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_25_100_Dom2_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_25_100_Dom2_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_8_25_Dom2_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_8_25_Dom2_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_0_8_Dom2_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_0_8_Dom2_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX95 = new DevComponents.DotNetBar.LabelX();
-            this.labelX96 = new DevComponents.DotNetBar.LabelX();
-            this.labelX97 = new DevComponents.DotNetBar.LabelX();
-            this.labelX98 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel30 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dI_E_Com_150_mas_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Com_150_mas_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Com_50_150_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Com_50_150_Agua = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Com_0_50_Alc = new DevComponents.Editors.DoubleInput();
-            this.dI_E_Com_0_50_Agua = new DevComponents.Editors.DoubleInput();
-            this.labelX99 = new DevComponents.DotNetBar.LabelX();
-            this.labelX100 = new DevComponents.DotNetBar.LabelX();
-            this.labelX101 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem5 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel7 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX102 = new DevComponents.DotNetBar.LabelX();
             this.labelX103 = new DevComponents.DotNetBar.LabelX();
@@ -492,6 +492,49 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel5.SuspendLayout();
+            this.groupPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Agua)).BeginInit();
+            this.groupPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Agua)).BeginInit();
+            this.groupPanel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Agua)).BeginInit();
+            this.groupPanel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Agua)).BeginInit();
+            this.groupPanel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Agua)).BeginInit();
+            this.groupPanel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Agua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Alc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Agua)).BeginInit();
             this.superTabControlPanel1.SuspendLayout();
             this.groupPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dI_A_Est_150_mas_Alc)).BeginInit();
@@ -578,49 +621,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_50_150_Agua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_0_50_Alc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_0_50_Agua)).BeginInit();
-            this.superTabControlPanel5.SuspendLayout();
-            this.groupPanel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Agua)).BeginInit();
-            this.groupPanel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Agua)).BeginInit();
-            this.groupPanel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Agua)).BeginInit();
-            this.groupPanel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Agua)).BeginInit();
-            this.groupPanel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Agua)).BeginInit();
-            this.groupPanel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Agua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Alc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Agua)).BeginInit();
             this.superTabControlPanel7.SuspendLayout();
             this.groupPanel31.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dI_G_Social_10_A_Mas_Alc)).BeginInit();
@@ -814,19 +814,19 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
+            this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Controls.Add(this.superTabControlPanel5);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel7);
             this.superTabControl1.Controls.Add(this.superTabControlPanel6);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel7);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel8);
             this.superTabControl1.Location = new System.Drawing.Point(12, 73);
             this.superTabControl1.Name = "superTabControl1";
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.superTabControl1.SelectedTabIndex = 2;
+            this.superTabControl1.SelectedTabIndex = 7;
             this.superTabControl1.Size = new System.Drawing.Size(947, 428);
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 0;
@@ -843,6 +843,1223 @@
             this.colorPickerDropDown2,
             this.labelItem1});
             this.superTabControl1.SelectedTabChanged += new System.EventHandler<DevComponents.DotNetBar.SuperTabStripSelectedTabChangedEventArgs>(this.superTabControl1_SelectedTabChanged);
+            // 
+            // superTabControlPanel5
+            // 
+            this.superTabControlPanel5.Controls.Add(this.labelX82);
+            this.superTabControlPanel5.Controls.Add(this.labelX83);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel25);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel26);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel27);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel28);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel29);
+            this.superTabControlPanel5.Controls.Add(this.groupPanel30);
+            this.superTabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel5.Location = new System.Drawing.Point(0, 26);
+            this.superTabControlPanel5.Name = "superTabControlPanel5";
+            this.superTabControlPanel5.Size = new System.Drawing.Size(947, 402);
+            this.superTabControlPanel5.TabIndex = 0;
+            this.superTabControlPanel5.TabItem = this.superTabItem5;
+            // 
+            // labelX82
+            // 
+            // 
+            // 
+            // 
+            this.labelX82.BackgroundStyle.Class = "";
+            this.labelX82.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX82.Location = new System.Drawing.Point(11, 203);
+            this.labelX82.Name = "labelX82";
+            this.labelX82.Size = new System.Drawing.Size(924, 23);
+            this.labelX82.TabIndex = 41;
+            this.labelX82.Text = "NO RESIDENCIALES";
+            this.labelX82.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX83
+            // 
+            // 
+            // 
+            // 
+            this.labelX83.BackgroundStyle.Class = "";
+            this.labelX83.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX83.Location = new System.Drawing.Point(11, 11);
+            this.labelX83.Name = "labelX83";
+            this.labelX83.Size = new System.Drawing.Size(924, 23);
+            this.labelX83.TabIndex = 40;
+            this.labelX83.Text = "RESIDENCIALES";
+            this.labelX83.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // groupPanel25
+            // 
+            this.groupPanel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel25.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel25.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel25.Controls.Add(this.dI_E_Social_10_A_Mas_Alc);
+            this.groupPanel25.Controls.Add(this.dI_E_Social_0_10_Alc);
+            this.groupPanel25.Controls.Add(this.dI_E_Social_10_A_Mas_Agua);
+            this.groupPanel25.Controls.Add(this.dI_E_Social_0_10_Agua);
+            this.groupPanel25.Controls.Add(this.labelX84);
+            this.groupPanel25.Controls.Add(this.labelX85);
+            this.groupPanel25.Location = new System.Drawing.Point(11, 40);
+            this.groupPanel25.Name = "groupPanel25";
+            this.groupPanel25.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel25.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel25.Style.BackColorGradientAngle = 90;
+            this.groupPanel25.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel25.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel25.Style.BorderBottomWidth = 1;
+            this.groupPanel25.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel25.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel25.Style.BorderLeftWidth = 1;
+            this.groupPanel25.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel25.Style.BorderRightWidth = 1;
+            this.groupPanel25.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel25.Style.BorderTopWidth = 1;
+            this.groupPanel25.Style.Class = "";
+            this.groupPanel25.Style.CornerDiameter = 4;
+            this.groupPanel25.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel25.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel25.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel25.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel25.StyleMouseDown.Class = "";
+            this.groupPanel25.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel25.StyleMouseOver.Class = "";
+            this.groupPanel25.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel25.TabIndex = 34;
+            this.groupPanel25.Text = "Social";
+            // 
+            // dI_E_Social_10_A_Mas_Alc
+            // 
+            this.dI_E_Social_10_A_Mas_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Social_10_A_Mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Social_10_A_Mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Social_10_A_Mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Social_10_A_Mas_Alc.Increment = 1D;
+            this.dI_E_Social_10_A_Mas_Alc.Location = new System.Drawing.Point(215, 65);
+            this.dI_E_Social_10_A_Mas_Alc.MinValue = 0D;
+            this.dI_E_Social_10_A_Mas_Alc.Name = "dI_E_Social_10_A_Mas_Alc";
+            this.dI_E_Social_10_A_Mas_Alc.ShowUpDown = true;
+            this.dI_E_Social_10_A_Mas_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Social_10_A_Mas_Alc.TabIndex = 5;
+            // 
+            // dI_E_Social_0_10_Alc
+            // 
+            this.dI_E_Social_0_10_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Social_0_10_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Social_0_10_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Social_0_10_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Social_0_10_Alc.Increment = 1D;
+            this.dI_E_Social_0_10_Alc.Location = new System.Drawing.Point(215, 33);
+            this.dI_E_Social_0_10_Alc.MinValue = 0D;
+            this.dI_E_Social_0_10_Alc.Name = "dI_E_Social_0_10_Alc";
+            this.dI_E_Social_0_10_Alc.ShowUpDown = true;
+            this.dI_E_Social_0_10_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Social_0_10_Alc.TabIndex = 3;
+            // 
+            // dI_E_Social_10_A_Mas_Agua
+            // 
+            this.dI_E_Social_10_A_Mas_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Social_10_A_Mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Social_10_A_Mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Social_10_A_Mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Social_10_A_Mas_Agua.Increment = 1D;
+            this.dI_E_Social_10_A_Mas_Agua.Location = new System.Drawing.Point(82, 65);
+            this.dI_E_Social_10_A_Mas_Agua.MinValue = 0D;
+            this.dI_E_Social_10_A_Mas_Agua.Name = "dI_E_Social_10_A_Mas_Agua";
+            this.dI_E_Social_10_A_Mas_Agua.ShowUpDown = true;
+            this.dI_E_Social_10_A_Mas_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Social_10_A_Mas_Agua.TabIndex = 4;
+            // 
+            // dI_E_Social_0_10_Agua
+            // 
+            this.dI_E_Social_0_10_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Social_0_10_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Social_0_10_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Social_0_10_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Social_0_10_Agua.Increment = 1D;
+            this.dI_E_Social_0_10_Agua.Location = new System.Drawing.Point(82, 33);
+            this.dI_E_Social_0_10_Agua.MinValue = 0D;
+            this.dI_E_Social_0_10_Agua.Name = "dI_E_Social_0_10_Agua";
+            this.dI_E_Social_0_10_Agua.ShowUpDown = true;
+            this.dI_E_Social_0_10_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Social_0_10_Agua.TabIndex = 2;
+            // 
+            // labelX84
+            // 
+            // 
+            // 
+            // 
+            this.labelX84.BackgroundStyle.Class = "";
+            this.labelX84.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX84.Location = new System.Drawing.Point(3, 65);
+            this.labelX84.Name = "labelX84";
+            this.labelX84.Size = new System.Drawing.Size(69, 20);
+            this.labelX84.TabIndex = 1;
+            this.labelX84.Text = "10 A MAS";
+            // 
+            // labelX85
+            // 
+            // 
+            // 
+            // 
+            this.labelX85.BackgroundStyle.Class = "";
+            this.labelX85.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX85.Location = new System.Drawing.Point(3, 33);
+            this.labelX85.Name = "labelX85";
+            this.labelX85.Size = new System.Drawing.Size(69, 20);
+            this.labelX85.TabIndex = 0;
+            this.labelX85.Text = "0 - 10";
+            // 
+            // groupPanel26
+            // 
+            this.groupPanel26.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel26.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel26.Controls.Add(this.dI_E_Est_150_mas_Alc);
+            this.groupPanel26.Controls.Add(this.dI_E_Est_150_mas_Agua);
+            this.groupPanel26.Controls.Add(this.dI_E_Est_50_150_Alc);
+            this.groupPanel26.Controls.Add(this.dI_E_Est_50_150_Agua);
+            this.groupPanel26.Controls.Add(this.dI_E_Est_0_50_Alc);
+            this.groupPanel26.Controls.Add(this.dI_E_Est_0_50_Agua);
+            this.groupPanel26.Controls.Add(this.labelX86);
+            this.groupPanel26.Controls.Add(this.labelX87);
+            this.groupPanel26.Controls.Add(this.labelX88);
+            this.groupPanel26.Location = new System.Drawing.Point(631, 232);
+            this.groupPanel26.Name = "groupPanel26";
+            this.groupPanel26.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel26.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel26.Style.BackColorGradientAngle = 90;
+            this.groupPanel26.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel26.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel26.Style.BorderBottomWidth = 1;
+            this.groupPanel26.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel26.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel26.Style.BorderLeftWidth = 1;
+            this.groupPanel26.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel26.Style.BorderRightWidth = 1;
+            this.groupPanel26.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel26.Style.BorderTopWidth = 1;
+            this.groupPanel26.Style.Class = "";
+            this.groupPanel26.Style.CornerDiameter = 4;
+            this.groupPanel26.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel26.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel26.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel26.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel26.StyleMouseDown.Class = "";
+            this.groupPanel26.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel26.StyleMouseOver.Class = "";
+            this.groupPanel26.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel26.TabIndex = 39;
+            this.groupPanel26.Text = "Estatal";
+            // 
+            // dI_E_Est_150_mas_Alc
+            // 
+            this.dI_E_Est_150_mas_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_150_mas_Alc.Increment = 1D;
+            this.dI_E_Est_150_mas_Alc.Location = new System.Drawing.Point(211, 82);
+            this.dI_E_Est_150_mas_Alc.MinValue = 0D;
+            this.dI_E_Est_150_mas_Alc.Name = "dI_E_Est_150_mas_Alc";
+            this.dI_E_Est_150_mas_Alc.ShowUpDown = true;
+            this.dI_E_Est_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_150_mas_Alc.TabIndex = 37;
+            // 
+            // dI_E_Est_150_mas_Agua
+            // 
+            this.dI_E_Est_150_mas_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_150_mas_Agua.Increment = 1D;
+            this.dI_E_Est_150_mas_Agua.Location = new System.Drawing.Point(78, 82);
+            this.dI_E_Est_150_mas_Agua.MinValue = 0D;
+            this.dI_E_Est_150_mas_Agua.Name = "dI_E_Est_150_mas_Agua";
+            this.dI_E_Est_150_mas_Agua.ShowUpDown = true;
+            this.dI_E_Est_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_150_mas_Agua.TabIndex = 36;
+            // 
+            // dI_E_Est_50_150_Alc
+            // 
+            this.dI_E_Est_50_150_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_50_150_Alc.Increment = 1D;
+            this.dI_E_Est_50_150_Alc.Location = new System.Drawing.Point(211, 56);
+            this.dI_E_Est_50_150_Alc.MinValue = 0D;
+            this.dI_E_Est_50_150_Alc.Name = "dI_E_Est_50_150_Alc";
+            this.dI_E_Est_50_150_Alc.ShowUpDown = true;
+            this.dI_E_Est_50_150_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_50_150_Alc.TabIndex = 35;
+            // 
+            // dI_E_Est_50_150_Agua
+            // 
+            this.dI_E_Est_50_150_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_50_150_Agua.Increment = 1D;
+            this.dI_E_Est_50_150_Agua.Location = new System.Drawing.Point(78, 56);
+            this.dI_E_Est_50_150_Agua.MinValue = 0D;
+            this.dI_E_Est_50_150_Agua.Name = "dI_E_Est_50_150_Agua";
+            this.dI_E_Est_50_150_Agua.ShowUpDown = true;
+            this.dI_E_Est_50_150_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_50_150_Agua.TabIndex = 34;
+            // 
+            // dI_E_Est_0_50_Alc
+            // 
+            this.dI_E_Est_0_50_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_0_50_Alc.Increment = 1D;
+            this.dI_E_Est_0_50_Alc.Location = new System.Drawing.Point(211, 30);
+            this.dI_E_Est_0_50_Alc.MinValue = 0D;
+            this.dI_E_Est_0_50_Alc.Name = "dI_E_Est_0_50_Alc";
+            this.dI_E_Est_0_50_Alc.ShowUpDown = true;
+            this.dI_E_Est_0_50_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_0_50_Alc.TabIndex = 33;
+            // 
+            // dI_E_Est_0_50_Agua
+            // 
+            this.dI_E_Est_0_50_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Est_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Est_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Est_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Est_0_50_Agua.Increment = 1D;
+            this.dI_E_Est_0_50_Agua.Location = new System.Drawing.Point(78, 30);
+            this.dI_E_Est_0_50_Agua.MinValue = 0D;
+            this.dI_E_Est_0_50_Agua.Name = "dI_E_Est_0_50_Agua";
+            this.dI_E_Est_0_50_Agua.ShowUpDown = true;
+            this.dI_E_Est_0_50_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Est_0_50_Agua.TabIndex = 32;
+            // 
+            // labelX86
+            // 
+            // 
+            // 
+            // 
+            this.labelX86.BackgroundStyle.Class = "";
+            this.labelX86.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX86.Location = new System.Drawing.Point(7, 82);
+            this.labelX86.Name = "labelX86";
+            this.labelX86.Size = new System.Drawing.Size(65, 20);
+            this.labelX86.TabIndex = 13;
+            this.labelX86.Text = "150 A MAS";
+            // 
+            // labelX87
+            // 
+            // 
+            // 
+            // 
+            this.labelX87.BackgroundStyle.Class = "";
+            this.labelX87.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX87.Location = new System.Drawing.Point(7, 56);
+            this.labelX87.Name = "labelX87";
+            this.labelX87.Size = new System.Drawing.Size(65, 20);
+            this.labelX87.TabIndex = 12;
+            this.labelX87.Text = "50 - 150";
+            // 
+            // labelX88
+            // 
+            // 
+            // 
+            // 
+            this.labelX88.BackgroundStyle.Class = "";
+            this.labelX88.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX88.Location = new System.Drawing.Point(7, 30);
+            this.labelX88.Name = "labelX88";
+            this.labelX88.Size = new System.Drawing.Size(65, 20);
+            this.labelX88.TabIndex = 11;
+            this.labelX88.Text = "0 -50";
+            // 
+            // groupPanel27
+            // 
+            this.groupPanel27.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel27.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_25_mas_Alc);
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_25_mas_Agua);
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_8_25_Alc);
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_8_25_Agua);
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_0_8_Alc);
+            this.groupPanel27.Controls.Add(this.dI_E_Dom1_0_8_Agua);
+            this.groupPanel27.Controls.Add(this.labelX89);
+            this.groupPanel27.Controls.Add(this.labelX90);
+            this.groupPanel27.Controls.Add(this.labelX91);
+            this.groupPanel27.Location = new System.Drawing.Point(321, 40);
+            this.groupPanel27.Name = "groupPanel27";
+            this.groupPanel27.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel27.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel27.Style.BackColorGradientAngle = 90;
+            this.groupPanel27.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel27.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel27.Style.BorderBottomWidth = 1;
+            this.groupPanel27.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel27.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel27.Style.BorderLeftWidth = 1;
+            this.groupPanel27.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel27.Style.BorderRightWidth = 1;
+            this.groupPanel27.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel27.Style.BorderTopWidth = 1;
+            this.groupPanel27.Style.Class = "";
+            this.groupPanel27.Style.CornerDiameter = 4;
+            this.groupPanel27.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel27.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel27.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel27.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel27.StyleMouseDown.Class = "";
+            this.groupPanel27.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel27.StyleMouseOver.Class = "";
+            this.groupPanel27.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel27.TabIndex = 35;
+            this.groupPanel27.Text = "Doméstica 1";
+            // 
+            // dI_E_Dom1_25_mas_Alc
+            // 
+            this.dI_E_Dom1_25_mas_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_25_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_25_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_25_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_25_mas_Alc.Increment = 1D;
+            this.dI_E_Dom1_25_mas_Alc.Location = new System.Drawing.Point(211, 85);
+            this.dI_E_Dom1_25_mas_Alc.MinValue = 0D;
+            this.dI_E_Dom1_25_mas_Alc.Name = "dI_E_Dom1_25_mas_Alc";
+            this.dI_E_Dom1_25_mas_Alc.ShowUpDown = true;
+            this.dI_E_Dom1_25_mas_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_25_mas_Alc.TabIndex = 11;
+            // 
+            // dI_E_Dom1_25_mas_Agua
+            // 
+            this.dI_E_Dom1_25_mas_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_25_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_25_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_25_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_25_mas_Agua.Increment = 1D;
+            this.dI_E_Dom1_25_mas_Agua.Location = new System.Drawing.Point(64, 85);
+            this.dI_E_Dom1_25_mas_Agua.MinValue = 0D;
+            this.dI_E_Dom1_25_mas_Agua.Name = "dI_E_Dom1_25_mas_Agua";
+            this.dI_E_Dom1_25_mas_Agua.ShowUpDown = true;
+            this.dI_E_Dom1_25_mas_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_25_mas_Agua.TabIndex = 10;
+            // 
+            // dI_E_Dom1_8_25_Alc
+            // 
+            this.dI_E_Dom1_8_25_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_8_25_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_8_25_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_8_25_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_8_25_Alc.Increment = 1D;
+            this.dI_E_Dom1_8_25_Alc.Location = new System.Drawing.Point(211, 59);
+            this.dI_E_Dom1_8_25_Alc.MinValue = 0D;
+            this.dI_E_Dom1_8_25_Alc.Name = "dI_E_Dom1_8_25_Alc";
+            this.dI_E_Dom1_8_25_Alc.ShowUpDown = true;
+            this.dI_E_Dom1_8_25_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_8_25_Alc.TabIndex = 9;
+            // 
+            // dI_E_Dom1_8_25_Agua
+            // 
+            this.dI_E_Dom1_8_25_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_8_25_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_8_25_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_8_25_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_8_25_Agua.Increment = 1D;
+            this.dI_E_Dom1_8_25_Agua.Location = new System.Drawing.Point(64, 59);
+            this.dI_E_Dom1_8_25_Agua.MinValue = 0D;
+            this.dI_E_Dom1_8_25_Agua.Name = "dI_E_Dom1_8_25_Agua";
+            this.dI_E_Dom1_8_25_Agua.ShowUpDown = true;
+            this.dI_E_Dom1_8_25_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_8_25_Agua.TabIndex = 8;
+            // 
+            // dI_E_Dom1_0_8_Alc
+            // 
+            this.dI_E_Dom1_0_8_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_0_8_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_0_8_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_0_8_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_0_8_Alc.Increment = 1D;
+            this.dI_E_Dom1_0_8_Alc.Location = new System.Drawing.Point(211, 33);
+            this.dI_E_Dom1_0_8_Alc.MinValue = 0D;
+            this.dI_E_Dom1_0_8_Alc.Name = "dI_E_Dom1_0_8_Alc";
+            this.dI_E_Dom1_0_8_Alc.ShowUpDown = true;
+            this.dI_E_Dom1_0_8_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_0_8_Alc.TabIndex = 7;
+            // 
+            // dI_E_Dom1_0_8_Agua
+            // 
+            this.dI_E_Dom1_0_8_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Dom1_0_8_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Dom1_0_8_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Dom1_0_8_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Dom1_0_8_Agua.Increment = 1D;
+            this.dI_E_Dom1_0_8_Agua.Location = new System.Drawing.Point(64, 33);
+            this.dI_E_Dom1_0_8_Agua.MinValue = 0D;
+            this.dI_E_Dom1_0_8_Agua.Name = "dI_E_Dom1_0_8_Agua";
+            this.dI_E_Dom1_0_8_Agua.ShowUpDown = true;
+            this.dI_E_Dom1_0_8_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Dom1_0_8_Agua.TabIndex = 6;
+            // 
+            // labelX89
+            // 
+            // 
+            // 
+            // 
+            this.labelX89.BackgroundStyle.Class = "";
+            this.labelX89.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX89.Location = new System.Drawing.Point(3, 85);
+            this.labelX89.Name = "labelX89";
+            this.labelX89.Size = new System.Drawing.Size(55, 20);
+            this.labelX89.TabIndex = 2;
+            this.labelX89.Text = "25 A MAS";
+            // 
+            // labelX90
+            // 
+            // 
+            // 
+            // 
+            this.labelX90.BackgroundStyle.Class = "";
+            this.labelX90.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX90.Location = new System.Drawing.Point(3, 59);
+            this.labelX90.Name = "labelX90";
+            this.labelX90.Size = new System.Drawing.Size(55, 20);
+            this.labelX90.TabIndex = 1;
+            this.labelX90.Text = "8 - 25";
+            // 
+            // labelX91
+            // 
+            // 
+            // 
+            // 
+            this.labelX91.BackgroundStyle.Class = "";
+            this.labelX91.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX91.Location = new System.Drawing.Point(3, 33);
+            this.labelX91.Name = "labelX91";
+            this.labelX91.Size = new System.Drawing.Size(55, 20);
+            this.labelX91.TabIndex = 0;
+            this.labelX91.Text = "0 - 8";
+            // 
+            // groupPanel28
+            // 
+            this.groupPanel28.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel28.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_150_mas_Alc);
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_150_mas_Agua);
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_50_150_Alc);
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_50_150_Agua);
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_0_50_Alc);
+            this.groupPanel28.Controls.Add(this.dI_E_Ind_0_50_Agua);
+            this.groupPanel28.Controls.Add(this.labelX92);
+            this.groupPanel28.Controls.Add(this.labelX93);
+            this.groupPanel28.Controls.Add(this.labelX94);
+            this.groupPanel28.Location = new System.Drawing.Point(321, 232);
+            this.groupPanel28.Name = "groupPanel28";
+            this.groupPanel28.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel28.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel28.Style.BackColorGradientAngle = 90;
+            this.groupPanel28.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel28.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel28.Style.BorderBottomWidth = 1;
+            this.groupPanel28.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel28.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel28.Style.BorderLeftWidth = 1;
+            this.groupPanel28.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel28.Style.BorderRightWidth = 1;
+            this.groupPanel28.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel28.Style.BorderTopWidth = 1;
+            this.groupPanel28.Style.Class = "";
+            this.groupPanel28.Style.CornerDiameter = 4;
+            this.groupPanel28.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel28.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel28.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel28.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel28.StyleMouseDown.Class = "";
+            this.groupPanel28.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel28.StyleMouseOver.Class = "";
+            this.groupPanel28.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel28.TabIndex = 38;
+            this.groupPanel28.Text = "Industrial";
+            // 
+            // dI_E_Ind_150_mas_Alc
+            // 
+            this.dI_E_Ind_150_mas_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_150_mas_Alc.Increment = 1D;
+            this.dI_E_Ind_150_mas_Alc.Location = new System.Drawing.Point(211, 82);
+            this.dI_E_Ind_150_mas_Alc.MinValue = 0D;
+            this.dI_E_Ind_150_mas_Alc.Name = "dI_E_Ind_150_mas_Alc";
+            this.dI_E_Ind_150_mas_Alc.ShowUpDown = true;
+            this.dI_E_Ind_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_150_mas_Alc.TabIndex = 31;
+            // 
+            // dI_E_Ind_150_mas_Agua
+            // 
+            this.dI_E_Ind_150_mas_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_150_mas_Agua.Increment = 1D;
+            this.dI_E_Ind_150_mas_Agua.Location = new System.Drawing.Point(78, 82);
+            this.dI_E_Ind_150_mas_Agua.MinValue = 0D;
+            this.dI_E_Ind_150_mas_Agua.Name = "dI_E_Ind_150_mas_Agua";
+            this.dI_E_Ind_150_mas_Agua.ShowUpDown = true;
+            this.dI_E_Ind_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_150_mas_Agua.TabIndex = 30;
+            // 
+            // dI_E_Ind_50_150_Alc
+            // 
+            this.dI_E_Ind_50_150_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_50_150_Alc.Increment = 1D;
+            this.dI_E_Ind_50_150_Alc.Location = new System.Drawing.Point(211, 56);
+            this.dI_E_Ind_50_150_Alc.MinValue = 0D;
+            this.dI_E_Ind_50_150_Alc.Name = "dI_E_Ind_50_150_Alc";
+            this.dI_E_Ind_50_150_Alc.ShowUpDown = true;
+            this.dI_E_Ind_50_150_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_50_150_Alc.TabIndex = 29;
+            // 
+            // dI_E_Ind_50_150_Agua
+            // 
+            this.dI_E_Ind_50_150_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_50_150_Agua.Increment = 1D;
+            this.dI_E_Ind_50_150_Agua.Location = new System.Drawing.Point(78, 56);
+            this.dI_E_Ind_50_150_Agua.MinValue = 0D;
+            this.dI_E_Ind_50_150_Agua.Name = "dI_E_Ind_50_150_Agua";
+            this.dI_E_Ind_50_150_Agua.ShowUpDown = true;
+            this.dI_E_Ind_50_150_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_50_150_Agua.TabIndex = 28;
+            // 
+            // dI_E_Ind_0_50_Alc
+            // 
+            this.dI_E_Ind_0_50_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_0_50_Alc.Increment = 1D;
+            this.dI_E_Ind_0_50_Alc.Location = new System.Drawing.Point(211, 30);
+            this.dI_E_Ind_0_50_Alc.MinValue = 0D;
+            this.dI_E_Ind_0_50_Alc.Name = "dI_E_Ind_0_50_Alc";
+            this.dI_E_Ind_0_50_Alc.ShowUpDown = true;
+            this.dI_E_Ind_0_50_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_0_50_Alc.TabIndex = 27;
+            // 
+            // dI_E_Ind_0_50_Agua
+            // 
+            this.dI_E_Ind_0_50_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Ind_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Ind_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Ind_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Ind_0_50_Agua.Increment = 1D;
+            this.dI_E_Ind_0_50_Agua.Location = new System.Drawing.Point(78, 30);
+            this.dI_E_Ind_0_50_Agua.MinValue = 0D;
+            this.dI_E_Ind_0_50_Agua.Name = "dI_E_Ind_0_50_Agua";
+            this.dI_E_Ind_0_50_Agua.ShowUpDown = true;
+            this.dI_E_Ind_0_50_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Ind_0_50_Agua.TabIndex = 26;
+            // 
+            // labelX92
+            // 
+            // 
+            // 
+            // 
+            this.labelX92.BackgroundStyle.Class = "";
+            this.labelX92.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX92.Location = new System.Drawing.Point(7, 82);
+            this.labelX92.Name = "labelX92";
+            this.labelX92.Size = new System.Drawing.Size(65, 20);
+            this.labelX92.TabIndex = 13;
+            this.labelX92.Text = "150 A MAS";
+            // 
+            // labelX93
+            // 
+            // 
+            // 
+            // 
+            this.labelX93.BackgroundStyle.Class = "";
+            this.labelX93.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX93.Location = new System.Drawing.Point(7, 56);
+            this.labelX93.Name = "labelX93";
+            this.labelX93.Size = new System.Drawing.Size(65, 20);
+            this.labelX93.TabIndex = 12;
+            this.labelX93.Text = "50 - 150";
+            // 
+            // labelX94
+            // 
+            // 
+            // 
+            // 
+            this.labelX94.BackgroundStyle.Class = "";
+            this.labelX94.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX94.Location = new System.Drawing.Point(7, 30);
+            this.labelX94.Name = "labelX94";
+            this.labelX94.Size = new System.Drawing.Size(65, 20);
+            this.labelX94.TabIndex = 11;
+            this.labelX94.Text = "0 -50";
+            // 
+            // groupPanel29
+            // 
+            this.groupPanel29.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel29.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel29.Controls.Add(this.dI_E_100_mas_Dom2_Alc);
+            this.groupPanel29.Controls.Add(this.dI_E_100_mas_Dom2_Agua);
+            this.groupPanel29.Controls.Add(this.dI_E_25_100_Dom2_Alc);
+            this.groupPanel29.Controls.Add(this.dI_E_25_100_Dom2_Agua);
+            this.groupPanel29.Controls.Add(this.dI_E_8_25_Dom2_Alc);
+            this.groupPanel29.Controls.Add(this.dI_E_8_25_Dom2_Agua);
+            this.groupPanel29.Controls.Add(this.dI_E_0_8_Dom2_Alc);
+            this.groupPanel29.Controls.Add(this.dI_E_0_8_Dom2_Agua);
+            this.groupPanel29.Controls.Add(this.labelX95);
+            this.groupPanel29.Controls.Add(this.labelX96);
+            this.groupPanel29.Controls.Add(this.labelX97);
+            this.groupPanel29.Controls.Add(this.labelX98);
+            this.groupPanel29.Location = new System.Drawing.Point(631, 40);
+            this.groupPanel29.Name = "groupPanel29";
+            this.groupPanel29.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel29.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel29.Style.BackColorGradientAngle = 90;
+            this.groupPanel29.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel29.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel29.Style.BorderBottomWidth = 1;
+            this.groupPanel29.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel29.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel29.Style.BorderLeftWidth = 1;
+            this.groupPanel29.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel29.Style.BorderRightWidth = 1;
+            this.groupPanel29.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel29.Style.BorderTopWidth = 1;
+            this.groupPanel29.Style.Class = "";
+            this.groupPanel29.Style.CornerDiameter = 4;
+            this.groupPanel29.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel29.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel29.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel29.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel29.StyleMouseDown.Class = "";
+            this.groupPanel29.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel29.StyleMouseOver.Class = "";
+            this.groupPanel29.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel29.TabIndex = 36;
+            this.groupPanel29.Text = "Doméstica 2";
+            // 
+            // dI_E_100_mas_Dom2_Alc
+            // 
+            this.dI_E_100_mas_Dom2_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_100_mas_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_100_mas_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_100_mas_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_100_mas_Dom2_Alc.Increment = 1D;
+            this.dI_E_100_mas_Dom2_Alc.Location = new System.Drawing.Point(207, 110);
+            this.dI_E_100_mas_Dom2_Alc.MinValue = 0D;
+            this.dI_E_100_mas_Dom2_Alc.Name = "dI_E_100_mas_Dom2_Alc";
+            this.dI_E_100_mas_Dom2_Alc.ShowUpDown = true;
+            this.dI_E_100_mas_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_100_mas_Dom2_Alc.TabIndex = 19;
+            // 
+            // dI_E_100_mas_Dom2_Agua
+            // 
+            this.dI_E_100_mas_Dom2_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_100_mas_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_100_mas_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_100_mas_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_100_mas_Dom2_Agua.Increment = 1D;
+            this.dI_E_100_mas_Dom2_Agua.Location = new System.Drawing.Point(74, 110);
+            this.dI_E_100_mas_Dom2_Agua.MinValue = 0D;
+            this.dI_E_100_mas_Dom2_Agua.Name = "dI_E_100_mas_Dom2_Agua";
+            this.dI_E_100_mas_Dom2_Agua.ShowUpDown = true;
+            this.dI_E_100_mas_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_100_mas_Dom2_Agua.TabIndex = 18;
+            // 
+            // dI_E_25_100_Dom2_Alc
+            // 
+            this.dI_E_25_100_Dom2_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_25_100_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_25_100_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_25_100_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_25_100_Dom2_Alc.Increment = 1D;
+            this.dI_E_25_100_Dom2_Alc.Location = new System.Drawing.Point(207, 85);
+            this.dI_E_25_100_Dom2_Alc.MinValue = 0D;
+            this.dI_E_25_100_Dom2_Alc.Name = "dI_E_25_100_Dom2_Alc";
+            this.dI_E_25_100_Dom2_Alc.ShowUpDown = true;
+            this.dI_E_25_100_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_25_100_Dom2_Alc.TabIndex = 17;
+            // 
+            // dI_E_25_100_Dom2_Agua
+            // 
+            this.dI_E_25_100_Dom2_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_25_100_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_25_100_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_25_100_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_25_100_Dom2_Agua.Increment = 1D;
+            this.dI_E_25_100_Dom2_Agua.Location = new System.Drawing.Point(74, 85);
+            this.dI_E_25_100_Dom2_Agua.MinValue = 0D;
+            this.dI_E_25_100_Dom2_Agua.Name = "dI_E_25_100_Dom2_Agua";
+            this.dI_E_25_100_Dom2_Agua.ShowUpDown = true;
+            this.dI_E_25_100_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_25_100_Dom2_Agua.TabIndex = 16;
+            // 
+            // dI_E_8_25_Dom2_Alc
+            // 
+            this.dI_E_8_25_Dom2_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_8_25_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_8_25_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_8_25_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_8_25_Dom2_Alc.Increment = 1D;
+            this.dI_E_8_25_Dom2_Alc.Location = new System.Drawing.Point(207, 59);
+            this.dI_E_8_25_Dom2_Alc.MinValue = 0D;
+            this.dI_E_8_25_Dom2_Alc.Name = "dI_E_8_25_Dom2_Alc";
+            this.dI_E_8_25_Dom2_Alc.ShowUpDown = true;
+            this.dI_E_8_25_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_8_25_Dom2_Alc.TabIndex = 15;
+            // 
+            // dI_E_8_25_Dom2_Agua
+            // 
+            this.dI_E_8_25_Dom2_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_8_25_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_8_25_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_8_25_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_8_25_Dom2_Agua.Increment = 1D;
+            this.dI_E_8_25_Dom2_Agua.Location = new System.Drawing.Point(74, 59);
+            this.dI_E_8_25_Dom2_Agua.MinValue = 0D;
+            this.dI_E_8_25_Dom2_Agua.Name = "dI_E_8_25_Dom2_Agua";
+            this.dI_E_8_25_Dom2_Agua.ShowUpDown = true;
+            this.dI_E_8_25_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_8_25_Dom2_Agua.TabIndex = 14;
+            // 
+            // dI_E_0_8_Dom2_Alc
+            // 
+            this.dI_E_0_8_Dom2_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_0_8_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_0_8_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_0_8_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_0_8_Dom2_Alc.Increment = 1D;
+            this.dI_E_0_8_Dom2_Alc.Location = new System.Drawing.Point(207, 33);
+            this.dI_E_0_8_Dom2_Alc.MinValue = 0D;
+            this.dI_E_0_8_Dom2_Alc.Name = "dI_E_0_8_Dom2_Alc";
+            this.dI_E_0_8_Dom2_Alc.ShowUpDown = true;
+            this.dI_E_0_8_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_0_8_Dom2_Alc.TabIndex = 13;
+            // 
+            // dI_E_0_8_Dom2_Agua
+            // 
+            this.dI_E_0_8_Dom2_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_0_8_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_0_8_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_0_8_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_0_8_Dom2_Agua.Increment = 1D;
+            this.dI_E_0_8_Dom2_Agua.Location = new System.Drawing.Point(74, 33);
+            this.dI_E_0_8_Dom2_Agua.MinValue = 0D;
+            this.dI_E_0_8_Dom2_Agua.Name = "dI_E_0_8_Dom2_Agua";
+            this.dI_E_0_8_Dom2_Agua.ShowUpDown = true;
+            this.dI_E_0_8_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_0_8_Dom2_Agua.TabIndex = 12;
+            // 
+            // labelX95
+            // 
+            // 
+            // 
+            // 
+            this.labelX95.BackgroundStyle.Class = "";
+            this.labelX95.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX95.Location = new System.Drawing.Point(3, 110);
+            this.labelX95.Name = "labelX95";
+            this.labelX95.Size = new System.Drawing.Size(65, 20);
+            this.labelX95.TabIndex = 4;
+            this.labelX95.Text = "100 A MAS";
+            // 
+            // labelX96
+            // 
+            // 
+            // 
+            // 
+            this.labelX96.BackgroundStyle.Class = "";
+            this.labelX96.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX96.Location = new System.Drawing.Point(3, 85);
+            this.labelX96.Name = "labelX96";
+            this.labelX96.Size = new System.Drawing.Size(65, 20);
+            this.labelX96.TabIndex = 3;
+            this.labelX96.Text = "25 - 100";
+            // 
+            // labelX97
+            // 
+            // 
+            // 
+            // 
+            this.labelX97.BackgroundStyle.Class = "";
+            this.labelX97.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX97.Location = new System.Drawing.Point(3, 59);
+            this.labelX97.Name = "labelX97";
+            this.labelX97.Size = new System.Drawing.Size(65, 20);
+            this.labelX97.TabIndex = 2;
+            this.labelX97.Text = "8 - 25";
+            // 
+            // labelX98
+            // 
+            // 
+            // 
+            // 
+            this.labelX98.BackgroundStyle.Class = "";
+            this.labelX98.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX98.Location = new System.Drawing.Point(3, 33);
+            this.labelX98.Name = "labelX98";
+            this.labelX98.Size = new System.Drawing.Size(65, 20);
+            this.labelX98.TabIndex = 1;
+            this.labelX98.Text = "0 - 8";
+            // 
+            // groupPanel30
+            // 
+            this.groupPanel30.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel30.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel30.Controls.Add(this.dI_E_Com_150_mas_Alc);
+            this.groupPanel30.Controls.Add(this.dI_E_Com_150_mas_Agua);
+            this.groupPanel30.Controls.Add(this.dI_E_Com_50_150_Alc);
+            this.groupPanel30.Controls.Add(this.dI_E_Com_50_150_Agua);
+            this.groupPanel30.Controls.Add(this.dI_E_Com_0_50_Alc);
+            this.groupPanel30.Controls.Add(this.dI_E_Com_0_50_Agua);
+            this.groupPanel30.Controls.Add(this.labelX99);
+            this.groupPanel30.Controls.Add(this.labelX100);
+            this.groupPanel30.Controls.Add(this.labelX101);
+            this.groupPanel30.Location = new System.Drawing.Point(11, 232);
+            this.groupPanel30.Name = "groupPanel30";
+            this.groupPanel30.Size = new System.Drawing.Size(304, 154);
+            // 
+            // 
+            // 
+            this.groupPanel30.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel30.Style.BackColorGradientAngle = 90;
+            this.groupPanel30.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel30.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel30.Style.BorderBottomWidth = 1;
+            this.groupPanel30.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel30.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel30.Style.BorderLeftWidth = 1;
+            this.groupPanel30.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel30.Style.BorderRightWidth = 1;
+            this.groupPanel30.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel30.Style.BorderTopWidth = 1;
+            this.groupPanel30.Style.Class = "";
+            this.groupPanel30.Style.CornerDiameter = 4;
+            this.groupPanel30.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel30.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel30.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel30.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel30.StyleMouseDown.Class = "";
+            this.groupPanel30.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel30.StyleMouseOver.Class = "";
+            this.groupPanel30.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel30.TabIndex = 37;
+            this.groupPanel30.Text = "Comercial";
+            // 
+            // dI_E_Com_150_mas_Alc
+            // 
+            this.dI_E_Com_150_mas_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_150_mas_Alc.Increment = 1D;
+            this.dI_E_Com_150_mas_Alc.Location = new System.Drawing.Point(215, 80);
+            this.dI_E_Com_150_mas_Alc.MinValue = 0D;
+            this.dI_E_Com_150_mas_Alc.Name = "dI_E_Com_150_mas_Alc";
+            this.dI_E_Com_150_mas_Alc.ShowUpDown = true;
+            this.dI_E_Com_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_150_mas_Alc.TabIndex = 25;
+            // 
+            // dI_E_Com_150_mas_Agua
+            // 
+            this.dI_E_Com_150_mas_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_150_mas_Agua.Increment = 1D;
+            this.dI_E_Com_150_mas_Agua.Location = new System.Drawing.Point(74, 80);
+            this.dI_E_Com_150_mas_Agua.MinValue = 0D;
+            this.dI_E_Com_150_mas_Agua.Name = "dI_E_Com_150_mas_Agua";
+            this.dI_E_Com_150_mas_Agua.ShowUpDown = true;
+            this.dI_E_Com_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_150_mas_Agua.TabIndex = 24;
+            // 
+            // dI_E_Com_50_150_Alc
+            // 
+            this.dI_E_Com_50_150_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_50_150_Alc.Increment = 1D;
+            this.dI_E_Com_50_150_Alc.Location = new System.Drawing.Point(215, 54);
+            this.dI_E_Com_50_150_Alc.MinValue = 0D;
+            this.dI_E_Com_50_150_Alc.Name = "dI_E_Com_50_150_Alc";
+            this.dI_E_Com_50_150_Alc.ShowUpDown = true;
+            this.dI_E_Com_50_150_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_50_150_Alc.TabIndex = 23;
+            // 
+            // dI_E_Com_50_150_Agua
+            // 
+            this.dI_E_Com_50_150_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_50_150_Agua.Increment = 1D;
+            this.dI_E_Com_50_150_Agua.Location = new System.Drawing.Point(74, 54);
+            this.dI_E_Com_50_150_Agua.MinValue = 0D;
+            this.dI_E_Com_50_150_Agua.Name = "dI_E_Com_50_150_Agua";
+            this.dI_E_Com_50_150_Agua.ShowUpDown = true;
+            this.dI_E_Com_50_150_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_50_150_Agua.TabIndex = 22;
+            // 
+            // dI_E_Com_0_50_Alc
+            // 
+            this.dI_E_Com_0_50_Alc.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_0_50_Alc.Increment = 1D;
+            this.dI_E_Com_0_50_Alc.Location = new System.Drawing.Point(215, 28);
+            this.dI_E_Com_0_50_Alc.MinValue = 0D;
+            this.dI_E_Com_0_50_Alc.Name = "dI_E_Com_0_50_Alc";
+            this.dI_E_Com_0_50_Alc.ShowUpDown = true;
+            this.dI_E_Com_0_50_Alc.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_0_50_Alc.TabIndex = 21;
+            // 
+            // dI_E_Com_0_50_Agua
+            // 
+            this.dI_E_Com_0_50_Agua.AutoOverwrite = true;
+            // 
+            // 
+            // 
+            this.dI_E_Com_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dI_E_Com_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dI_E_Com_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.dI_E_Com_0_50_Agua.Increment = 1D;
+            this.dI_E_Com_0_50_Agua.Location = new System.Drawing.Point(74, 28);
+            this.dI_E_Com_0_50_Agua.MinValue = 0D;
+            this.dI_E_Com_0_50_Agua.Name = "dI_E_Com_0_50_Agua";
+            this.dI_E_Com_0_50_Agua.ShowUpDown = true;
+            this.dI_E_Com_0_50_Agua.Size = new System.Drawing.Size(80, 20);
+            this.dI_E_Com_0_50_Agua.TabIndex = 20;
+            // 
+            // labelX99
+            // 
+            // 
+            // 
+            // 
+            this.labelX99.BackgroundStyle.Class = "";
+            this.labelX99.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX99.Location = new System.Drawing.Point(3, 80);
+            this.labelX99.Name = "labelX99";
+            this.labelX99.Size = new System.Drawing.Size(65, 20);
+            this.labelX99.TabIndex = 4;
+            this.labelX99.Text = "150 A MAS";
+            // 
+            // labelX100
+            // 
+            // 
+            // 
+            // 
+            this.labelX100.BackgroundStyle.Class = "";
+            this.labelX100.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX100.Location = new System.Drawing.Point(3, 54);
+            this.labelX100.Name = "labelX100";
+            this.labelX100.Size = new System.Drawing.Size(65, 20);
+            this.labelX100.TabIndex = 3;
+            this.labelX100.Text = "50 - 150";
+            // 
+            // labelX101
+            // 
+            // 
+            // 
+            // 
+            this.labelX101.BackgroundStyle.Class = "";
+            this.labelX101.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX101.Location = new System.Drawing.Point(3, 28);
+            this.labelX101.Name = "labelX101";
+            this.labelX101.Size = new System.Drawing.Size(65, 20);
+            this.labelX101.TabIndex = 2;
+            this.labelX101.Text = "0 -50";
+            // 
+            // superTabItem5
+            // 
+            this.superTabItem5.AttachedControl = this.superTabControlPanel5;
+            this.superTabItem5.GlobalItem = false;
+            this.superTabItem5.Name = "superTabItem5";
+            this.superTabItem5.Text = "E) CHULUCANAS";
+            // 
+            // superTabControlPanel6
+            // 
+            this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel6.Location = new System.Drawing.Point(0, 26);
+            this.superTabControlPanel6.Name = "superTabControlPanel6";
+            this.superTabControlPanel6.Size = new System.Drawing.Size(947, 402);
+            this.superTabControlPanel6.TabIndex = 0;
+            this.superTabControlPanel6.TabItem = this.superTabItem6;
+            // 
+            // superTabItem6
+            // 
+            this.superTabItem6.AttachedControl = this.superTabControlPanel6;
+            this.superTabItem6.GlobalItem = false;
+            this.superTabItem6.Name = "superTabItem6";
+            this.superTabItem6.Text = "F) MORROPON";
             // 
             // superTabControlPanel1
             // 
@@ -1898,7 +3115,7 @@
             // 
             // groupPanel1
             // 
-            this.groupPanel1.BackColor = System.Drawing.Color.White;
+            this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.dI_A_Social_10_A_Mas_Alc);
@@ -2043,7 +3260,7 @@
             this.superTabItem1.AttachedControl = this.superTabControlPanel1;
             this.superTabItem1.GlobalItem = false;
             this.superTabItem1.Name = "superTabItem1";
-            this.superTabItem1.Text = "A) PIURA Y CASTILLA";
+            this.superTabItem1.Text = "A) PIURA";
             // 
             // superTabControlPanel2
             // 
@@ -2056,9 +3273,9 @@
             this.superTabControlPanel2.Controls.Add(this.groupPanel10);
             this.superTabControlPanel2.Controls.Add(this.groupPanel9);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 26);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(947, 428);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(947, 402);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -2094,7 +3311,7 @@
             // 
             // groupPanel12
             // 
-            this.groupPanel12.BackColor = System.Drawing.Color.White;
+            this.groupPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel12.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel12.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel12.Controls.Add(this.dI_B_Social_10_A_Mas_Alc);
@@ -3248,1223 +4465,6 @@
             this.superTabItem2.Tooltip = "ESTRUCTURA TARIFARIA DE CATACAOS ,PAITA, P.NUEVO,VIVIATE, COLAN, MIRAMAR, LA HUAC" +
     "A, EL TAMBO, TAMARINDO, EL ARENAL, YACILA, VICHAYAL Y AMOTAPE";
             // 
-            // superTabControlPanel6
-            // 
-            this.superTabControlPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel6.Location = new System.Drawing.Point(0, 26);
-            this.superTabControlPanel6.Name = "superTabControlPanel6";
-            this.superTabControlPanel6.Size = new System.Drawing.Size(947, 402);
-            this.superTabControlPanel6.TabIndex = 0;
-            this.superTabControlPanel6.TabItem = this.superTabItem6;
-            // 
-            // superTabItem6
-            // 
-            this.superTabItem6.AttachedControl = this.superTabControlPanel6;
-            this.superTabItem6.GlobalItem = false;
-            this.superTabItem6.Name = "superTabItem6";
-            this.superTabItem6.Text = "F) MORROPON";
-            // 
-            // superTabControlPanel5
-            // 
-            this.superTabControlPanel5.Controls.Add(this.labelX82);
-            this.superTabControlPanel5.Controls.Add(this.labelX83);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel25);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel26);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel27);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel28);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel29);
-            this.superTabControlPanel5.Controls.Add(this.groupPanel30);
-            this.superTabControlPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel5.Location = new System.Drawing.Point(0, 26);
-            this.superTabControlPanel5.Name = "superTabControlPanel5";
-            this.superTabControlPanel5.Size = new System.Drawing.Size(947, 402);
-            this.superTabControlPanel5.TabIndex = 0;
-            this.superTabControlPanel5.TabItem = this.superTabItem5;
-            // 
-            // labelX82
-            // 
-            // 
-            // 
-            // 
-            this.labelX82.BackgroundStyle.Class = "";
-            this.labelX82.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX82.Location = new System.Drawing.Point(11, 203);
-            this.labelX82.Name = "labelX82";
-            this.labelX82.Size = new System.Drawing.Size(924, 23);
-            this.labelX82.TabIndex = 41;
-            this.labelX82.Text = "NO RESIDENCIALES";
-            this.labelX82.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX83
-            // 
-            // 
-            // 
-            // 
-            this.labelX83.BackgroundStyle.Class = "";
-            this.labelX83.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX83.Location = new System.Drawing.Point(11, 11);
-            this.labelX83.Name = "labelX83";
-            this.labelX83.Size = new System.Drawing.Size(924, 23);
-            this.labelX83.TabIndex = 40;
-            this.labelX83.Text = "RESIDENCIALES";
-            this.labelX83.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // groupPanel25
-            // 
-            this.groupPanel25.BackColor = System.Drawing.Color.White;
-            this.groupPanel25.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel25.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel25.Controls.Add(this.dI_E_Social_10_A_Mas_Alc);
-            this.groupPanel25.Controls.Add(this.dI_E_Social_0_10_Alc);
-            this.groupPanel25.Controls.Add(this.dI_E_Social_10_A_Mas_Agua);
-            this.groupPanel25.Controls.Add(this.dI_E_Social_0_10_Agua);
-            this.groupPanel25.Controls.Add(this.labelX84);
-            this.groupPanel25.Controls.Add(this.labelX85);
-            this.groupPanel25.Location = new System.Drawing.Point(11, 40);
-            this.groupPanel25.Name = "groupPanel25";
-            this.groupPanel25.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel25.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel25.Style.BackColorGradientAngle = 90;
-            this.groupPanel25.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel25.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel25.Style.BorderBottomWidth = 1;
-            this.groupPanel25.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel25.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel25.Style.BorderLeftWidth = 1;
-            this.groupPanel25.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel25.Style.BorderRightWidth = 1;
-            this.groupPanel25.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel25.Style.BorderTopWidth = 1;
-            this.groupPanel25.Style.Class = "";
-            this.groupPanel25.Style.CornerDiameter = 4;
-            this.groupPanel25.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel25.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel25.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel25.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel25.StyleMouseDown.Class = "";
-            this.groupPanel25.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel25.StyleMouseOver.Class = "";
-            this.groupPanel25.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel25.TabIndex = 34;
-            this.groupPanel25.Text = "Social";
-            // 
-            // dI_E_Social_10_A_Mas_Alc
-            // 
-            this.dI_E_Social_10_A_Mas_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Social_10_A_Mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Social_10_A_Mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Social_10_A_Mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Social_10_A_Mas_Alc.Increment = 1D;
-            this.dI_E_Social_10_A_Mas_Alc.Location = new System.Drawing.Point(215, 65);
-            this.dI_E_Social_10_A_Mas_Alc.MinValue = 0D;
-            this.dI_E_Social_10_A_Mas_Alc.Name = "dI_E_Social_10_A_Mas_Alc";
-            this.dI_E_Social_10_A_Mas_Alc.ShowUpDown = true;
-            this.dI_E_Social_10_A_Mas_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Social_10_A_Mas_Alc.TabIndex = 5;
-            // 
-            // dI_E_Social_0_10_Alc
-            // 
-            this.dI_E_Social_0_10_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Social_0_10_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Social_0_10_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Social_0_10_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Social_0_10_Alc.Increment = 1D;
-            this.dI_E_Social_0_10_Alc.Location = new System.Drawing.Point(215, 33);
-            this.dI_E_Social_0_10_Alc.MinValue = 0D;
-            this.dI_E_Social_0_10_Alc.Name = "dI_E_Social_0_10_Alc";
-            this.dI_E_Social_0_10_Alc.ShowUpDown = true;
-            this.dI_E_Social_0_10_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Social_0_10_Alc.TabIndex = 3;
-            // 
-            // dI_E_Social_10_A_Mas_Agua
-            // 
-            this.dI_E_Social_10_A_Mas_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Social_10_A_Mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Social_10_A_Mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Social_10_A_Mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Social_10_A_Mas_Agua.Increment = 1D;
-            this.dI_E_Social_10_A_Mas_Agua.Location = new System.Drawing.Point(82, 65);
-            this.dI_E_Social_10_A_Mas_Agua.MinValue = 0D;
-            this.dI_E_Social_10_A_Mas_Agua.Name = "dI_E_Social_10_A_Mas_Agua";
-            this.dI_E_Social_10_A_Mas_Agua.ShowUpDown = true;
-            this.dI_E_Social_10_A_Mas_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Social_10_A_Mas_Agua.TabIndex = 4;
-            // 
-            // dI_E_Social_0_10_Agua
-            // 
-            this.dI_E_Social_0_10_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Social_0_10_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Social_0_10_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Social_0_10_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Social_0_10_Agua.Increment = 1D;
-            this.dI_E_Social_0_10_Agua.Location = new System.Drawing.Point(82, 33);
-            this.dI_E_Social_0_10_Agua.MinValue = 0D;
-            this.dI_E_Social_0_10_Agua.Name = "dI_E_Social_0_10_Agua";
-            this.dI_E_Social_0_10_Agua.ShowUpDown = true;
-            this.dI_E_Social_0_10_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Social_0_10_Agua.TabIndex = 2;
-            // 
-            // labelX84
-            // 
-            // 
-            // 
-            // 
-            this.labelX84.BackgroundStyle.Class = "";
-            this.labelX84.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX84.Location = new System.Drawing.Point(3, 65);
-            this.labelX84.Name = "labelX84";
-            this.labelX84.Size = new System.Drawing.Size(69, 20);
-            this.labelX84.TabIndex = 1;
-            this.labelX84.Text = "10 A MAS";
-            // 
-            // labelX85
-            // 
-            // 
-            // 
-            // 
-            this.labelX85.BackgroundStyle.Class = "";
-            this.labelX85.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX85.Location = new System.Drawing.Point(3, 33);
-            this.labelX85.Name = "labelX85";
-            this.labelX85.Size = new System.Drawing.Size(69, 20);
-            this.labelX85.TabIndex = 0;
-            this.labelX85.Text = "0 - 10";
-            // 
-            // groupPanel26
-            // 
-            this.groupPanel26.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel26.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel26.Controls.Add(this.dI_E_Est_150_mas_Alc);
-            this.groupPanel26.Controls.Add(this.dI_E_Est_150_mas_Agua);
-            this.groupPanel26.Controls.Add(this.dI_E_Est_50_150_Alc);
-            this.groupPanel26.Controls.Add(this.dI_E_Est_50_150_Agua);
-            this.groupPanel26.Controls.Add(this.dI_E_Est_0_50_Alc);
-            this.groupPanel26.Controls.Add(this.dI_E_Est_0_50_Agua);
-            this.groupPanel26.Controls.Add(this.labelX86);
-            this.groupPanel26.Controls.Add(this.labelX87);
-            this.groupPanel26.Controls.Add(this.labelX88);
-            this.groupPanel26.Location = new System.Drawing.Point(631, 232);
-            this.groupPanel26.Name = "groupPanel26";
-            this.groupPanel26.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel26.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel26.Style.BackColorGradientAngle = 90;
-            this.groupPanel26.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel26.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel26.Style.BorderBottomWidth = 1;
-            this.groupPanel26.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel26.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel26.Style.BorderLeftWidth = 1;
-            this.groupPanel26.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel26.Style.BorderRightWidth = 1;
-            this.groupPanel26.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel26.Style.BorderTopWidth = 1;
-            this.groupPanel26.Style.Class = "";
-            this.groupPanel26.Style.CornerDiameter = 4;
-            this.groupPanel26.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel26.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel26.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel26.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel26.StyleMouseDown.Class = "";
-            this.groupPanel26.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel26.StyleMouseOver.Class = "";
-            this.groupPanel26.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel26.TabIndex = 39;
-            this.groupPanel26.Text = "Estatal";
-            // 
-            // dI_E_Est_150_mas_Alc
-            // 
-            this.dI_E_Est_150_mas_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_150_mas_Alc.Increment = 1D;
-            this.dI_E_Est_150_mas_Alc.Location = new System.Drawing.Point(211, 82);
-            this.dI_E_Est_150_mas_Alc.MinValue = 0D;
-            this.dI_E_Est_150_mas_Alc.Name = "dI_E_Est_150_mas_Alc";
-            this.dI_E_Est_150_mas_Alc.ShowUpDown = true;
-            this.dI_E_Est_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_150_mas_Alc.TabIndex = 37;
-            // 
-            // dI_E_Est_150_mas_Agua
-            // 
-            this.dI_E_Est_150_mas_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_150_mas_Agua.Increment = 1D;
-            this.dI_E_Est_150_mas_Agua.Location = new System.Drawing.Point(78, 82);
-            this.dI_E_Est_150_mas_Agua.MinValue = 0D;
-            this.dI_E_Est_150_mas_Agua.Name = "dI_E_Est_150_mas_Agua";
-            this.dI_E_Est_150_mas_Agua.ShowUpDown = true;
-            this.dI_E_Est_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_150_mas_Agua.TabIndex = 36;
-            // 
-            // dI_E_Est_50_150_Alc
-            // 
-            this.dI_E_Est_50_150_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_50_150_Alc.Increment = 1D;
-            this.dI_E_Est_50_150_Alc.Location = new System.Drawing.Point(211, 56);
-            this.dI_E_Est_50_150_Alc.MinValue = 0D;
-            this.dI_E_Est_50_150_Alc.Name = "dI_E_Est_50_150_Alc";
-            this.dI_E_Est_50_150_Alc.ShowUpDown = true;
-            this.dI_E_Est_50_150_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_50_150_Alc.TabIndex = 35;
-            // 
-            // dI_E_Est_50_150_Agua
-            // 
-            this.dI_E_Est_50_150_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_50_150_Agua.Increment = 1D;
-            this.dI_E_Est_50_150_Agua.Location = new System.Drawing.Point(78, 56);
-            this.dI_E_Est_50_150_Agua.MinValue = 0D;
-            this.dI_E_Est_50_150_Agua.Name = "dI_E_Est_50_150_Agua";
-            this.dI_E_Est_50_150_Agua.ShowUpDown = true;
-            this.dI_E_Est_50_150_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_50_150_Agua.TabIndex = 34;
-            // 
-            // dI_E_Est_0_50_Alc
-            // 
-            this.dI_E_Est_0_50_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_0_50_Alc.Increment = 1D;
-            this.dI_E_Est_0_50_Alc.Location = new System.Drawing.Point(211, 30);
-            this.dI_E_Est_0_50_Alc.MinValue = 0D;
-            this.dI_E_Est_0_50_Alc.Name = "dI_E_Est_0_50_Alc";
-            this.dI_E_Est_0_50_Alc.ShowUpDown = true;
-            this.dI_E_Est_0_50_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_0_50_Alc.TabIndex = 33;
-            // 
-            // dI_E_Est_0_50_Agua
-            // 
-            this.dI_E_Est_0_50_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Est_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Est_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Est_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Est_0_50_Agua.Increment = 1D;
-            this.dI_E_Est_0_50_Agua.Location = new System.Drawing.Point(78, 30);
-            this.dI_E_Est_0_50_Agua.MinValue = 0D;
-            this.dI_E_Est_0_50_Agua.Name = "dI_E_Est_0_50_Agua";
-            this.dI_E_Est_0_50_Agua.ShowUpDown = true;
-            this.dI_E_Est_0_50_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Est_0_50_Agua.TabIndex = 32;
-            // 
-            // labelX86
-            // 
-            // 
-            // 
-            // 
-            this.labelX86.BackgroundStyle.Class = "";
-            this.labelX86.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX86.Location = new System.Drawing.Point(7, 82);
-            this.labelX86.Name = "labelX86";
-            this.labelX86.Size = new System.Drawing.Size(65, 20);
-            this.labelX86.TabIndex = 13;
-            this.labelX86.Text = "150 A MAS";
-            // 
-            // labelX87
-            // 
-            // 
-            // 
-            // 
-            this.labelX87.BackgroundStyle.Class = "";
-            this.labelX87.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX87.Location = new System.Drawing.Point(7, 56);
-            this.labelX87.Name = "labelX87";
-            this.labelX87.Size = new System.Drawing.Size(65, 20);
-            this.labelX87.TabIndex = 12;
-            this.labelX87.Text = "50 - 150";
-            // 
-            // labelX88
-            // 
-            // 
-            // 
-            // 
-            this.labelX88.BackgroundStyle.Class = "";
-            this.labelX88.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX88.Location = new System.Drawing.Point(7, 30);
-            this.labelX88.Name = "labelX88";
-            this.labelX88.Size = new System.Drawing.Size(65, 20);
-            this.labelX88.TabIndex = 11;
-            this.labelX88.Text = "0 -50";
-            // 
-            // groupPanel27
-            // 
-            this.groupPanel27.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel27.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_25_mas_Alc);
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_25_mas_Agua);
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_8_25_Alc);
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_8_25_Agua);
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_0_8_Alc);
-            this.groupPanel27.Controls.Add(this.dI_E_Dom1_0_8_Agua);
-            this.groupPanel27.Controls.Add(this.labelX89);
-            this.groupPanel27.Controls.Add(this.labelX90);
-            this.groupPanel27.Controls.Add(this.labelX91);
-            this.groupPanel27.Location = new System.Drawing.Point(321, 40);
-            this.groupPanel27.Name = "groupPanel27";
-            this.groupPanel27.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel27.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel27.Style.BackColorGradientAngle = 90;
-            this.groupPanel27.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel27.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel27.Style.BorderBottomWidth = 1;
-            this.groupPanel27.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel27.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel27.Style.BorderLeftWidth = 1;
-            this.groupPanel27.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel27.Style.BorderRightWidth = 1;
-            this.groupPanel27.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel27.Style.BorderTopWidth = 1;
-            this.groupPanel27.Style.Class = "";
-            this.groupPanel27.Style.CornerDiameter = 4;
-            this.groupPanel27.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel27.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel27.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel27.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel27.StyleMouseDown.Class = "";
-            this.groupPanel27.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel27.StyleMouseOver.Class = "";
-            this.groupPanel27.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel27.TabIndex = 35;
-            this.groupPanel27.Text = "Doméstica 1";
-            // 
-            // dI_E_Dom1_25_mas_Alc
-            // 
-            this.dI_E_Dom1_25_mas_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_25_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_25_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_25_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_25_mas_Alc.Increment = 1D;
-            this.dI_E_Dom1_25_mas_Alc.Location = new System.Drawing.Point(211, 85);
-            this.dI_E_Dom1_25_mas_Alc.MinValue = 0D;
-            this.dI_E_Dom1_25_mas_Alc.Name = "dI_E_Dom1_25_mas_Alc";
-            this.dI_E_Dom1_25_mas_Alc.ShowUpDown = true;
-            this.dI_E_Dom1_25_mas_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_25_mas_Alc.TabIndex = 11;
-            // 
-            // dI_E_Dom1_25_mas_Agua
-            // 
-            this.dI_E_Dom1_25_mas_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_25_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_25_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_25_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_25_mas_Agua.Increment = 1D;
-            this.dI_E_Dom1_25_mas_Agua.Location = new System.Drawing.Point(64, 85);
-            this.dI_E_Dom1_25_mas_Agua.MinValue = 0D;
-            this.dI_E_Dom1_25_mas_Agua.Name = "dI_E_Dom1_25_mas_Agua";
-            this.dI_E_Dom1_25_mas_Agua.ShowUpDown = true;
-            this.dI_E_Dom1_25_mas_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_25_mas_Agua.TabIndex = 10;
-            // 
-            // dI_E_Dom1_8_25_Alc
-            // 
-            this.dI_E_Dom1_8_25_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_8_25_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_8_25_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_8_25_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_8_25_Alc.Increment = 1D;
-            this.dI_E_Dom1_8_25_Alc.Location = new System.Drawing.Point(211, 59);
-            this.dI_E_Dom1_8_25_Alc.MinValue = 0D;
-            this.dI_E_Dom1_8_25_Alc.Name = "dI_E_Dom1_8_25_Alc";
-            this.dI_E_Dom1_8_25_Alc.ShowUpDown = true;
-            this.dI_E_Dom1_8_25_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_8_25_Alc.TabIndex = 9;
-            // 
-            // dI_E_Dom1_8_25_Agua
-            // 
-            this.dI_E_Dom1_8_25_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_8_25_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_8_25_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_8_25_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_8_25_Agua.Increment = 1D;
-            this.dI_E_Dom1_8_25_Agua.Location = new System.Drawing.Point(64, 59);
-            this.dI_E_Dom1_8_25_Agua.MinValue = 0D;
-            this.dI_E_Dom1_8_25_Agua.Name = "dI_E_Dom1_8_25_Agua";
-            this.dI_E_Dom1_8_25_Agua.ShowUpDown = true;
-            this.dI_E_Dom1_8_25_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_8_25_Agua.TabIndex = 8;
-            // 
-            // dI_E_Dom1_0_8_Alc
-            // 
-            this.dI_E_Dom1_0_8_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_0_8_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_0_8_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_0_8_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_0_8_Alc.Increment = 1D;
-            this.dI_E_Dom1_0_8_Alc.Location = new System.Drawing.Point(211, 33);
-            this.dI_E_Dom1_0_8_Alc.MinValue = 0D;
-            this.dI_E_Dom1_0_8_Alc.Name = "dI_E_Dom1_0_8_Alc";
-            this.dI_E_Dom1_0_8_Alc.ShowUpDown = true;
-            this.dI_E_Dom1_0_8_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_0_8_Alc.TabIndex = 7;
-            // 
-            // dI_E_Dom1_0_8_Agua
-            // 
-            this.dI_E_Dom1_0_8_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Dom1_0_8_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Dom1_0_8_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Dom1_0_8_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Dom1_0_8_Agua.Increment = 1D;
-            this.dI_E_Dom1_0_8_Agua.Location = new System.Drawing.Point(64, 33);
-            this.dI_E_Dom1_0_8_Agua.MinValue = 0D;
-            this.dI_E_Dom1_0_8_Agua.Name = "dI_E_Dom1_0_8_Agua";
-            this.dI_E_Dom1_0_8_Agua.ShowUpDown = true;
-            this.dI_E_Dom1_0_8_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Dom1_0_8_Agua.TabIndex = 6;
-            // 
-            // labelX89
-            // 
-            // 
-            // 
-            // 
-            this.labelX89.BackgroundStyle.Class = "";
-            this.labelX89.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX89.Location = new System.Drawing.Point(3, 85);
-            this.labelX89.Name = "labelX89";
-            this.labelX89.Size = new System.Drawing.Size(55, 20);
-            this.labelX89.TabIndex = 2;
-            this.labelX89.Text = "25 A MAS";
-            // 
-            // labelX90
-            // 
-            // 
-            // 
-            // 
-            this.labelX90.BackgroundStyle.Class = "";
-            this.labelX90.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX90.Location = new System.Drawing.Point(3, 59);
-            this.labelX90.Name = "labelX90";
-            this.labelX90.Size = new System.Drawing.Size(55, 20);
-            this.labelX90.TabIndex = 1;
-            this.labelX90.Text = "8 - 25";
-            // 
-            // labelX91
-            // 
-            // 
-            // 
-            // 
-            this.labelX91.BackgroundStyle.Class = "";
-            this.labelX91.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX91.Location = new System.Drawing.Point(3, 33);
-            this.labelX91.Name = "labelX91";
-            this.labelX91.Size = new System.Drawing.Size(55, 20);
-            this.labelX91.TabIndex = 0;
-            this.labelX91.Text = "0 - 8";
-            // 
-            // groupPanel28
-            // 
-            this.groupPanel28.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel28.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_150_mas_Alc);
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_150_mas_Agua);
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_50_150_Alc);
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_50_150_Agua);
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_0_50_Alc);
-            this.groupPanel28.Controls.Add(this.dI_E_Ind_0_50_Agua);
-            this.groupPanel28.Controls.Add(this.labelX92);
-            this.groupPanel28.Controls.Add(this.labelX93);
-            this.groupPanel28.Controls.Add(this.labelX94);
-            this.groupPanel28.Location = new System.Drawing.Point(321, 232);
-            this.groupPanel28.Name = "groupPanel28";
-            this.groupPanel28.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel28.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel28.Style.BackColorGradientAngle = 90;
-            this.groupPanel28.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel28.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel28.Style.BorderBottomWidth = 1;
-            this.groupPanel28.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel28.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel28.Style.BorderLeftWidth = 1;
-            this.groupPanel28.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel28.Style.BorderRightWidth = 1;
-            this.groupPanel28.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel28.Style.BorderTopWidth = 1;
-            this.groupPanel28.Style.Class = "";
-            this.groupPanel28.Style.CornerDiameter = 4;
-            this.groupPanel28.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel28.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel28.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel28.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel28.StyleMouseDown.Class = "";
-            this.groupPanel28.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel28.StyleMouseOver.Class = "";
-            this.groupPanel28.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel28.TabIndex = 38;
-            this.groupPanel28.Text = "Industrial";
-            // 
-            // dI_E_Ind_150_mas_Alc
-            // 
-            this.dI_E_Ind_150_mas_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_150_mas_Alc.Increment = 1D;
-            this.dI_E_Ind_150_mas_Alc.Location = new System.Drawing.Point(211, 82);
-            this.dI_E_Ind_150_mas_Alc.MinValue = 0D;
-            this.dI_E_Ind_150_mas_Alc.Name = "dI_E_Ind_150_mas_Alc";
-            this.dI_E_Ind_150_mas_Alc.ShowUpDown = true;
-            this.dI_E_Ind_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_150_mas_Alc.TabIndex = 31;
-            // 
-            // dI_E_Ind_150_mas_Agua
-            // 
-            this.dI_E_Ind_150_mas_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_150_mas_Agua.Increment = 1D;
-            this.dI_E_Ind_150_mas_Agua.Location = new System.Drawing.Point(78, 82);
-            this.dI_E_Ind_150_mas_Agua.MinValue = 0D;
-            this.dI_E_Ind_150_mas_Agua.Name = "dI_E_Ind_150_mas_Agua";
-            this.dI_E_Ind_150_mas_Agua.ShowUpDown = true;
-            this.dI_E_Ind_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_150_mas_Agua.TabIndex = 30;
-            // 
-            // dI_E_Ind_50_150_Alc
-            // 
-            this.dI_E_Ind_50_150_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_50_150_Alc.Increment = 1D;
-            this.dI_E_Ind_50_150_Alc.Location = new System.Drawing.Point(211, 56);
-            this.dI_E_Ind_50_150_Alc.MinValue = 0D;
-            this.dI_E_Ind_50_150_Alc.Name = "dI_E_Ind_50_150_Alc";
-            this.dI_E_Ind_50_150_Alc.ShowUpDown = true;
-            this.dI_E_Ind_50_150_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_50_150_Alc.TabIndex = 29;
-            // 
-            // dI_E_Ind_50_150_Agua
-            // 
-            this.dI_E_Ind_50_150_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_50_150_Agua.Increment = 1D;
-            this.dI_E_Ind_50_150_Agua.Location = new System.Drawing.Point(78, 56);
-            this.dI_E_Ind_50_150_Agua.MinValue = 0D;
-            this.dI_E_Ind_50_150_Agua.Name = "dI_E_Ind_50_150_Agua";
-            this.dI_E_Ind_50_150_Agua.ShowUpDown = true;
-            this.dI_E_Ind_50_150_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_50_150_Agua.TabIndex = 28;
-            // 
-            // dI_E_Ind_0_50_Alc
-            // 
-            this.dI_E_Ind_0_50_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_0_50_Alc.Increment = 1D;
-            this.dI_E_Ind_0_50_Alc.Location = new System.Drawing.Point(211, 30);
-            this.dI_E_Ind_0_50_Alc.MinValue = 0D;
-            this.dI_E_Ind_0_50_Alc.Name = "dI_E_Ind_0_50_Alc";
-            this.dI_E_Ind_0_50_Alc.ShowUpDown = true;
-            this.dI_E_Ind_0_50_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_0_50_Alc.TabIndex = 27;
-            // 
-            // dI_E_Ind_0_50_Agua
-            // 
-            this.dI_E_Ind_0_50_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Ind_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Ind_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Ind_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Ind_0_50_Agua.Increment = 1D;
-            this.dI_E_Ind_0_50_Agua.Location = new System.Drawing.Point(78, 30);
-            this.dI_E_Ind_0_50_Agua.MinValue = 0D;
-            this.dI_E_Ind_0_50_Agua.Name = "dI_E_Ind_0_50_Agua";
-            this.dI_E_Ind_0_50_Agua.ShowUpDown = true;
-            this.dI_E_Ind_0_50_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Ind_0_50_Agua.TabIndex = 26;
-            // 
-            // labelX92
-            // 
-            // 
-            // 
-            // 
-            this.labelX92.BackgroundStyle.Class = "";
-            this.labelX92.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX92.Location = new System.Drawing.Point(7, 82);
-            this.labelX92.Name = "labelX92";
-            this.labelX92.Size = new System.Drawing.Size(65, 20);
-            this.labelX92.TabIndex = 13;
-            this.labelX92.Text = "150 A MAS";
-            // 
-            // labelX93
-            // 
-            // 
-            // 
-            // 
-            this.labelX93.BackgroundStyle.Class = "";
-            this.labelX93.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX93.Location = new System.Drawing.Point(7, 56);
-            this.labelX93.Name = "labelX93";
-            this.labelX93.Size = new System.Drawing.Size(65, 20);
-            this.labelX93.TabIndex = 12;
-            this.labelX93.Text = "50 - 150";
-            // 
-            // labelX94
-            // 
-            // 
-            // 
-            // 
-            this.labelX94.BackgroundStyle.Class = "";
-            this.labelX94.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX94.Location = new System.Drawing.Point(7, 30);
-            this.labelX94.Name = "labelX94";
-            this.labelX94.Size = new System.Drawing.Size(65, 20);
-            this.labelX94.TabIndex = 11;
-            this.labelX94.Text = "0 -50";
-            // 
-            // groupPanel29
-            // 
-            this.groupPanel29.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel29.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel29.Controls.Add(this.dI_E_100_mas_Dom2_Alc);
-            this.groupPanel29.Controls.Add(this.dI_E_100_mas_Dom2_Agua);
-            this.groupPanel29.Controls.Add(this.dI_E_25_100_Dom2_Alc);
-            this.groupPanel29.Controls.Add(this.dI_E_25_100_Dom2_Agua);
-            this.groupPanel29.Controls.Add(this.dI_E_8_25_Dom2_Alc);
-            this.groupPanel29.Controls.Add(this.dI_E_8_25_Dom2_Agua);
-            this.groupPanel29.Controls.Add(this.dI_E_0_8_Dom2_Alc);
-            this.groupPanel29.Controls.Add(this.dI_E_0_8_Dom2_Agua);
-            this.groupPanel29.Controls.Add(this.labelX95);
-            this.groupPanel29.Controls.Add(this.labelX96);
-            this.groupPanel29.Controls.Add(this.labelX97);
-            this.groupPanel29.Controls.Add(this.labelX98);
-            this.groupPanel29.Location = new System.Drawing.Point(631, 40);
-            this.groupPanel29.Name = "groupPanel29";
-            this.groupPanel29.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel29.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel29.Style.BackColorGradientAngle = 90;
-            this.groupPanel29.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel29.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel29.Style.BorderBottomWidth = 1;
-            this.groupPanel29.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel29.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel29.Style.BorderLeftWidth = 1;
-            this.groupPanel29.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel29.Style.BorderRightWidth = 1;
-            this.groupPanel29.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel29.Style.BorderTopWidth = 1;
-            this.groupPanel29.Style.Class = "";
-            this.groupPanel29.Style.CornerDiameter = 4;
-            this.groupPanel29.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel29.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel29.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel29.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel29.StyleMouseDown.Class = "";
-            this.groupPanel29.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel29.StyleMouseOver.Class = "";
-            this.groupPanel29.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel29.TabIndex = 36;
-            this.groupPanel29.Text = "Doméstica 2";
-            // 
-            // dI_E_100_mas_Dom2_Alc
-            // 
-            this.dI_E_100_mas_Dom2_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_100_mas_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_100_mas_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_100_mas_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_100_mas_Dom2_Alc.Increment = 1D;
-            this.dI_E_100_mas_Dom2_Alc.Location = new System.Drawing.Point(207, 110);
-            this.dI_E_100_mas_Dom2_Alc.MinValue = 0D;
-            this.dI_E_100_mas_Dom2_Alc.Name = "dI_E_100_mas_Dom2_Alc";
-            this.dI_E_100_mas_Dom2_Alc.ShowUpDown = true;
-            this.dI_E_100_mas_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_100_mas_Dom2_Alc.TabIndex = 19;
-            // 
-            // dI_E_100_mas_Dom2_Agua
-            // 
-            this.dI_E_100_mas_Dom2_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_100_mas_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_100_mas_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_100_mas_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_100_mas_Dom2_Agua.Increment = 1D;
-            this.dI_E_100_mas_Dom2_Agua.Location = new System.Drawing.Point(74, 110);
-            this.dI_E_100_mas_Dom2_Agua.MinValue = 0D;
-            this.dI_E_100_mas_Dom2_Agua.Name = "dI_E_100_mas_Dom2_Agua";
-            this.dI_E_100_mas_Dom2_Agua.ShowUpDown = true;
-            this.dI_E_100_mas_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_100_mas_Dom2_Agua.TabIndex = 18;
-            // 
-            // dI_E_25_100_Dom2_Alc
-            // 
-            this.dI_E_25_100_Dom2_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_25_100_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_25_100_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_25_100_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_25_100_Dom2_Alc.Increment = 1D;
-            this.dI_E_25_100_Dom2_Alc.Location = new System.Drawing.Point(207, 85);
-            this.dI_E_25_100_Dom2_Alc.MinValue = 0D;
-            this.dI_E_25_100_Dom2_Alc.Name = "dI_E_25_100_Dom2_Alc";
-            this.dI_E_25_100_Dom2_Alc.ShowUpDown = true;
-            this.dI_E_25_100_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_25_100_Dom2_Alc.TabIndex = 17;
-            // 
-            // dI_E_25_100_Dom2_Agua
-            // 
-            this.dI_E_25_100_Dom2_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_25_100_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_25_100_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_25_100_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_25_100_Dom2_Agua.Increment = 1D;
-            this.dI_E_25_100_Dom2_Agua.Location = new System.Drawing.Point(74, 85);
-            this.dI_E_25_100_Dom2_Agua.MinValue = 0D;
-            this.dI_E_25_100_Dom2_Agua.Name = "dI_E_25_100_Dom2_Agua";
-            this.dI_E_25_100_Dom2_Agua.ShowUpDown = true;
-            this.dI_E_25_100_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_25_100_Dom2_Agua.TabIndex = 16;
-            // 
-            // dI_E_8_25_Dom2_Alc
-            // 
-            this.dI_E_8_25_Dom2_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_8_25_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_8_25_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_8_25_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_8_25_Dom2_Alc.Increment = 1D;
-            this.dI_E_8_25_Dom2_Alc.Location = new System.Drawing.Point(207, 59);
-            this.dI_E_8_25_Dom2_Alc.MinValue = 0D;
-            this.dI_E_8_25_Dom2_Alc.Name = "dI_E_8_25_Dom2_Alc";
-            this.dI_E_8_25_Dom2_Alc.ShowUpDown = true;
-            this.dI_E_8_25_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_8_25_Dom2_Alc.TabIndex = 15;
-            // 
-            // dI_E_8_25_Dom2_Agua
-            // 
-            this.dI_E_8_25_Dom2_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_8_25_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_8_25_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_8_25_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_8_25_Dom2_Agua.Increment = 1D;
-            this.dI_E_8_25_Dom2_Agua.Location = new System.Drawing.Point(74, 59);
-            this.dI_E_8_25_Dom2_Agua.MinValue = 0D;
-            this.dI_E_8_25_Dom2_Agua.Name = "dI_E_8_25_Dom2_Agua";
-            this.dI_E_8_25_Dom2_Agua.ShowUpDown = true;
-            this.dI_E_8_25_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_8_25_Dom2_Agua.TabIndex = 14;
-            // 
-            // dI_E_0_8_Dom2_Alc
-            // 
-            this.dI_E_0_8_Dom2_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_0_8_Dom2_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_0_8_Dom2_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_0_8_Dom2_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_0_8_Dom2_Alc.Increment = 1D;
-            this.dI_E_0_8_Dom2_Alc.Location = new System.Drawing.Point(207, 33);
-            this.dI_E_0_8_Dom2_Alc.MinValue = 0D;
-            this.dI_E_0_8_Dom2_Alc.Name = "dI_E_0_8_Dom2_Alc";
-            this.dI_E_0_8_Dom2_Alc.ShowUpDown = true;
-            this.dI_E_0_8_Dom2_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_0_8_Dom2_Alc.TabIndex = 13;
-            // 
-            // dI_E_0_8_Dom2_Agua
-            // 
-            this.dI_E_0_8_Dom2_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_0_8_Dom2_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_0_8_Dom2_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_0_8_Dom2_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_0_8_Dom2_Agua.Increment = 1D;
-            this.dI_E_0_8_Dom2_Agua.Location = new System.Drawing.Point(74, 33);
-            this.dI_E_0_8_Dom2_Agua.MinValue = 0D;
-            this.dI_E_0_8_Dom2_Agua.Name = "dI_E_0_8_Dom2_Agua";
-            this.dI_E_0_8_Dom2_Agua.ShowUpDown = true;
-            this.dI_E_0_8_Dom2_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_0_8_Dom2_Agua.TabIndex = 12;
-            // 
-            // labelX95
-            // 
-            // 
-            // 
-            // 
-            this.labelX95.BackgroundStyle.Class = "";
-            this.labelX95.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX95.Location = new System.Drawing.Point(3, 110);
-            this.labelX95.Name = "labelX95";
-            this.labelX95.Size = new System.Drawing.Size(65, 20);
-            this.labelX95.TabIndex = 4;
-            this.labelX95.Text = "100 A MAS";
-            // 
-            // labelX96
-            // 
-            // 
-            // 
-            // 
-            this.labelX96.BackgroundStyle.Class = "";
-            this.labelX96.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX96.Location = new System.Drawing.Point(3, 85);
-            this.labelX96.Name = "labelX96";
-            this.labelX96.Size = new System.Drawing.Size(65, 20);
-            this.labelX96.TabIndex = 3;
-            this.labelX96.Text = "25 - 100";
-            // 
-            // labelX97
-            // 
-            // 
-            // 
-            // 
-            this.labelX97.BackgroundStyle.Class = "";
-            this.labelX97.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX97.Location = new System.Drawing.Point(3, 59);
-            this.labelX97.Name = "labelX97";
-            this.labelX97.Size = new System.Drawing.Size(65, 20);
-            this.labelX97.TabIndex = 2;
-            this.labelX97.Text = "8 - 25";
-            // 
-            // labelX98
-            // 
-            // 
-            // 
-            // 
-            this.labelX98.BackgroundStyle.Class = "";
-            this.labelX98.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX98.Location = new System.Drawing.Point(3, 33);
-            this.labelX98.Name = "labelX98";
-            this.labelX98.Size = new System.Drawing.Size(65, 20);
-            this.labelX98.TabIndex = 1;
-            this.labelX98.Text = "0 - 8";
-            // 
-            // groupPanel30
-            // 
-            this.groupPanel30.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel30.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel30.Controls.Add(this.dI_E_Com_150_mas_Alc);
-            this.groupPanel30.Controls.Add(this.dI_E_Com_150_mas_Agua);
-            this.groupPanel30.Controls.Add(this.dI_E_Com_50_150_Alc);
-            this.groupPanel30.Controls.Add(this.dI_E_Com_50_150_Agua);
-            this.groupPanel30.Controls.Add(this.dI_E_Com_0_50_Alc);
-            this.groupPanel30.Controls.Add(this.dI_E_Com_0_50_Agua);
-            this.groupPanel30.Controls.Add(this.labelX99);
-            this.groupPanel30.Controls.Add(this.labelX100);
-            this.groupPanel30.Controls.Add(this.labelX101);
-            this.groupPanel30.Location = new System.Drawing.Point(11, 232);
-            this.groupPanel30.Name = "groupPanel30";
-            this.groupPanel30.Size = new System.Drawing.Size(304, 154);
-            // 
-            // 
-            // 
-            this.groupPanel30.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel30.Style.BackColorGradientAngle = 90;
-            this.groupPanel30.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel30.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel30.Style.BorderBottomWidth = 1;
-            this.groupPanel30.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel30.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel30.Style.BorderLeftWidth = 1;
-            this.groupPanel30.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel30.Style.BorderRightWidth = 1;
-            this.groupPanel30.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel30.Style.BorderTopWidth = 1;
-            this.groupPanel30.Style.Class = "";
-            this.groupPanel30.Style.CornerDiameter = 4;
-            this.groupPanel30.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel30.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel30.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel30.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel30.StyleMouseDown.Class = "";
-            this.groupPanel30.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel30.StyleMouseOver.Class = "";
-            this.groupPanel30.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel30.TabIndex = 37;
-            this.groupPanel30.Text = "Comercial";
-            // 
-            // dI_E_Com_150_mas_Alc
-            // 
-            this.dI_E_Com_150_mas_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_150_mas_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_150_mas_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_150_mas_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_150_mas_Alc.Increment = 1D;
-            this.dI_E_Com_150_mas_Alc.Location = new System.Drawing.Point(215, 80);
-            this.dI_E_Com_150_mas_Alc.MinValue = 0D;
-            this.dI_E_Com_150_mas_Alc.Name = "dI_E_Com_150_mas_Alc";
-            this.dI_E_Com_150_mas_Alc.ShowUpDown = true;
-            this.dI_E_Com_150_mas_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_150_mas_Alc.TabIndex = 25;
-            // 
-            // dI_E_Com_150_mas_Agua
-            // 
-            this.dI_E_Com_150_mas_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_150_mas_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_150_mas_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_150_mas_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_150_mas_Agua.Increment = 1D;
-            this.dI_E_Com_150_mas_Agua.Location = new System.Drawing.Point(74, 80);
-            this.dI_E_Com_150_mas_Agua.MinValue = 0D;
-            this.dI_E_Com_150_mas_Agua.Name = "dI_E_Com_150_mas_Agua";
-            this.dI_E_Com_150_mas_Agua.ShowUpDown = true;
-            this.dI_E_Com_150_mas_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_150_mas_Agua.TabIndex = 24;
-            // 
-            // dI_E_Com_50_150_Alc
-            // 
-            this.dI_E_Com_50_150_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_50_150_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_50_150_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_50_150_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_50_150_Alc.Increment = 1D;
-            this.dI_E_Com_50_150_Alc.Location = new System.Drawing.Point(215, 54);
-            this.dI_E_Com_50_150_Alc.MinValue = 0D;
-            this.dI_E_Com_50_150_Alc.Name = "dI_E_Com_50_150_Alc";
-            this.dI_E_Com_50_150_Alc.ShowUpDown = true;
-            this.dI_E_Com_50_150_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_50_150_Alc.TabIndex = 23;
-            // 
-            // dI_E_Com_50_150_Agua
-            // 
-            this.dI_E_Com_50_150_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_50_150_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_50_150_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_50_150_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_50_150_Agua.Increment = 1D;
-            this.dI_E_Com_50_150_Agua.Location = new System.Drawing.Point(74, 54);
-            this.dI_E_Com_50_150_Agua.MinValue = 0D;
-            this.dI_E_Com_50_150_Agua.Name = "dI_E_Com_50_150_Agua";
-            this.dI_E_Com_50_150_Agua.ShowUpDown = true;
-            this.dI_E_Com_50_150_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_50_150_Agua.TabIndex = 22;
-            // 
-            // dI_E_Com_0_50_Alc
-            // 
-            this.dI_E_Com_0_50_Alc.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_0_50_Alc.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_0_50_Alc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_0_50_Alc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_0_50_Alc.Increment = 1D;
-            this.dI_E_Com_0_50_Alc.Location = new System.Drawing.Point(215, 28);
-            this.dI_E_Com_0_50_Alc.MinValue = 0D;
-            this.dI_E_Com_0_50_Alc.Name = "dI_E_Com_0_50_Alc";
-            this.dI_E_Com_0_50_Alc.ShowUpDown = true;
-            this.dI_E_Com_0_50_Alc.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_0_50_Alc.TabIndex = 21;
-            // 
-            // dI_E_Com_0_50_Agua
-            // 
-            this.dI_E_Com_0_50_Agua.AutoOverwrite = true;
-            // 
-            // 
-            // 
-            this.dI_E_Com_0_50_Agua.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dI_E_Com_0_50_Agua.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dI_E_Com_0_50_Agua.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.dI_E_Com_0_50_Agua.Increment = 1D;
-            this.dI_E_Com_0_50_Agua.Location = new System.Drawing.Point(74, 28);
-            this.dI_E_Com_0_50_Agua.MinValue = 0D;
-            this.dI_E_Com_0_50_Agua.Name = "dI_E_Com_0_50_Agua";
-            this.dI_E_Com_0_50_Agua.ShowUpDown = true;
-            this.dI_E_Com_0_50_Agua.Size = new System.Drawing.Size(80, 20);
-            this.dI_E_Com_0_50_Agua.TabIndex = 20;
-            // 
-            // labelX99
-            // 
-            // 
-            // 
-            // 
-            this.labelX99.BackgroundStyle.Class = "";
-            this.labelX99.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX99.Location = new System.Drawing.Point(3, 80);
-            this.labelX99.Name = "labelX99";
-            this.labelX99.Size = new System.Drawing.Size(65, 20);
-            this.labelX99.TabIndex = 4;
-            this.labelX99.Text = "150 A MAS";
-            // 
-            // labelX100
-            // 
-            // 
-            // 
-            // 
-            this.labelX100.BackgroundStyle.Class = "";
-            this.labelX100.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX100.Location = new System.Drawing.Point(3, 54);
-            this.labelX100.Name = "labelX100";
-            this.labelX100.Size = new System.Drawing.Size(65, 20);
-            this.labelX100.TabIndex = 3;
-            this.labelX100.Text = "50 - 150";
-            // 
-            // labelX101
-            // 
-            // 
-            // 
-            // 
-            this.labelX101.BackgroundStyle.Class = "";
-            this.labelX101.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX101.Location = new System.Drawing.Point(3, 28);
-            this.labelX101.Name = "labelX101";
-            this.labelX101.Size = new System.Drawing.Size(65, 20);
-            this.labelX101.TabIndex = 2;
-            this.labelX101.Text = "0 -50";
-            // 
-            // superTabItem5
-            // 
-            this.superTabItem5.AttachedControl = this.superTabControlPanel5;
-            this.superTabItem5.GlobalItem = false;
-            this.superTabItem5.Name = "superTabItem5";
-            this.superTabItem5.Text = "E) CHULUCANAS";
-            // 
             // superTabControlPanel7
             // 
             this.superTabControlPanel7.Controls.Add(this.labelX102);
@@ -4476,9 +4476,9 @@
             this.superTabControlPanel7.Controls.Add(this.groupPanel35);
             this.superTabControlPanel7.Controls.Add(this.groupPanel36);
             this.superTabControlPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel7.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel7.Location = new System.Drawing.Point(0, 26);
             this.superTabControlPanel7.Name = "superTabControlPanel7";
-            this.superTabControlPanel7.Size = new System.Drawing.Size(947, 428);
+            this.superTabControlPanel7.Size = new System.Drawing.Size(947, 402);
             this.superTabControlPanel7.TabIndex = 0;
             this.superTabControlPanel7.TabItem = this.superTabItem7;
             // 
@@ -4514,7 +4514,7 @@
             // 
             // groupPanel31
             // 
-            this.groupPanel31.BackColor = System.Drawing.Color.White;
+            this.groupPanel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel31.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel31.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel31.Controls.Add(this.dI_G_Social_10_A_Mas_Alc);
@@ -5679,9 +5679,9 @@
             this.superTabControlPanel4.Controls.Add(this.groupPanel23);
             this.superTabControlPanel4.Controls.Add(this.groupPanel24);
             this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel4.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel4.Location = new System.Drawing.Point(0, 26);
             this.superTabControlPanel4.Name = "superTabControlPanel4";
-            this.superTabControlPanel4.Size = new System.Drawing.Size(947, 428);
+            this.superTabControlPanel4.Size = new System.Drawing.Size(947, 402);
             this.superTabControlPanel4.TabIndex = 0;
             this.superTabControlPanel4.TabItem = this.superTabItem4;
             // 
@@ -5717,7 +5717,7 @@
             // 
             // groupPanel19
             // 
-            this.groupPanel19.BackColor = System.Drawing.Color.White;
+            this.groupPanel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel19.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel19.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel19.Controls.Add(this.dI_D_Social_10_A_Mas_Alc);
@@ -5846,6 +5846,7 @@
             // 
             // labelX65
             // 
+            this.labelX65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             // 
             // 
             // 
@@ -6880,9 +6881,9 @@
             this.superTabControlPanel3.Controls.Add(this.groupPanel17);
             this.superTabControlPanel3.Controls.Add(this.groupPanel18);
             this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 26);
             this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(947, 428);
+            this.superTabControlPanel3.Size = new System.Drawing.Size(947, 402);
             this.superTabControlPanel3.TabIndex = 0;
             this.superTabControlPanel3.TabItem = this.superTabItem3;
             // 
@@ -6918,7 +6919,7 @@
             // 
             // groupPanel13
             // 
-            this.groupPanel13.BackColor = System.Drawing.Color.White;
+            this.groupPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel13.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel13.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel13.Controls.Add(this.dI_C_Social_10_A_Mas_Alc);
@@ -8081,9 +8082,9 @@
             this.superTabControlPanel8.Controls.Add(this.groupPanel41);
             this.superTabControlPanel8.Controls.Add(this.groupPanel42);
             this.superTabControlPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel8.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel8.Location = new System.Drawing.Point(0, 26);
             this.superTabControlPanel8.Name = "superTabControlPanel8";
-            this.superTabControlPanel8.Size = new System.Drawing.Size(947, 428);
+            this.superTabControlPanel8.Size = new System.Drawing.Size(947, 402);
             this.superTabControlPanel8.TabIndex = 0;
             this.superTabControlPanel8.TabItem = this.superTabItem8;
             // 
@@ -8095,7 +8096,7 @@
             this.labelX122.BackgroundStyle.Class = "";
             this.labelX122.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX122.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX122.Location = new System.Drawing.Point(11, 228);
+            this.labelX122.Location = new System.Drawing.Point(11, 203);
             this.labelX122.Name = "labelX122";
             this.labelX122.Size = new System.Drawing.Size(924, 23);
             this.labelX122.TabIndex = 57;
@@ -8119,7 +8120,7 @@
             // 
             // groupPanel37
             // 
-            this.groupPanel37.BackColor = System.Drawing.Color.White;
+            this.groupPanel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel37.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel37.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel37.Controls.Add(this.dI_H_Social_10_A_Mas_Alc);
@@ -8185,6 +8186,7 @@
             // dI_H_Social_0_10_Alc
             // 
             this.dI_H_Social_0_10_Alc.AutoOverwrite = true;
+            this.dI_H_Social_0_10_Alc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             // 
             // 
             // 
@@ -8272,7 +8274,7 @@
             this.groupPanel38.Controls.Add(this.labelX126);
             this.groupPanel38.Controls.Add(this.labelX127);
             this.groupPanel38.Controls.Add(this.labelX128);
-            this.groupPanel38.Location = new System.Drawing.Point(631, 257);
+            this.groupPanel38.Location = new System.Drawing.Point(631, 232);
             this.groupPanel38.Name = "groupPanel38";
             this.groupPanel38.Size = new System.Drawing.Size(304, 154);
             // 
@@ -8654,7 +8656,7 @@
             this.groupPanel40.Controls.Add(this.labelX132);
             this.groupPanel40.Controls.Add(this.labelX133);
             this.groupPanel40.Controls.Add(this.labelX134);
-            this.groupPanel40.Location = new System.Drawing.Point(321, 257);
+            this.groupPanel40.Location = new System.Drawing.Point(321, 232);
             this.groupPanel40.Name = "groupPanel40";
             this.groupPanel40.Size = new System.Drawing.Size(304, 154);
             // 
@@ -9086,7 +9088,7 @@
             this.groupPanel42.Controls.Add(this.labelX139);
             this.groupPanel42.Controls.Add(this.labelX140);
             this.groupPanel42.Controls.Add(this.labelX141);
-            this.groupPanel42.Location = new System.Drawing.Point(11, 257);
+            this.groupPanel42.Location = new System.Drawing.Point(11, 232);
             this.groupPanel42.Name = "groupPanel42";
             this.groupPanel42.Size = new System.Drawing.Size(304, 154);
             // 
@@ -9378,6 +9380,49 @@
             this.Text = "Estructura Tarifaria";
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel5.ResumeLayout(false);
+            this.groupPanel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Agua)).EndInit();
+            this.groupPanel26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Agua)).EndInit();
+            this.groupPanel27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Agua)).EndInit();
+            this.groupPanel28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Agua)).EndInit();
+            this.groupPanel29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Agua)).EndInit();
+            this.groupPanel30.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Agua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Alc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Agua)).EndInit();
             this.superTabControlPanel1.ResumeLayout(false);
             this.groupPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dI_A_Est_150_mas_Alc)).EndInit();
@@ -9464,49 +9509,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_50_150_Agua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_0_50_Alc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dI_B_Com_0_50_Agua)).EndInit();
-            this.superTabControlPanel5.ResumeLayout(false);
-            this.groupPanel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_10_A_Mas_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Social_0_10_Agua)).EndInit();
-            this.groupPanel26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_150_mas_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_50_150_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Est_0_50_Agua)).EndInit();
-            this.groupPanel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_25_mas_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_8_25_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Dom1_0_8_Agua)).EndInit();
-            this.groupPanel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_150_mas_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_50_150_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Ind_0_50_Agua)).EndInit();
-            this.groupPanel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_100_mas_Dom2_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_25_100_Dom2_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_8_25_Dom2_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_0_8_Dom2_Agua)).EndInit();
-            this.groupPanel30.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_150_mas_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_50_150_Agua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Alc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dI_E_Com_0_50_Agua)).EndInit();
             this.superTabControlPanel7.ResumeLayout(false);
             this.groupPanel31.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dI_G_Social_10_A_Mas_Alc)).EndInit();

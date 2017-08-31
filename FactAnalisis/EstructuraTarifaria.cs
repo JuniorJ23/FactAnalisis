@@ -38,24 +38,21 @@ namespace FactAnalisis
             Console.WriteLine("Ultimo Periodo: "+  UltimoPeriodo.Desc);
             cmbPeriodos.SelectedValue = UltimoPeriodo.ID;
 
-            estructs = new List<EstructuraTarifariaModel>();
-            CargarGrupoA(UltimoPeriodo.ID);
+            CargarGrupoA(UltimoPeriodo);
             dICargoFijoEstA.Value = UltimoPeriodo.CargoFijo;
         }
 
         private void superTabControl1_SelectedTabChanged(object sender, SuperTabStripSelectedTabChangedEventArgs e)
         {
             Periodo selectedPeriodo = cmbPeriodos.SelectedItem as Periodo;
-            loadGroup(superTabControl1.SelectedTabIndex);
+            loadGroup(selectedPeriodo);
         }
 
         
 
-        private void CargarGrupoA(int periodo)
+        private void CargarGrupoA(Periodo periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Primer Grupo (Grupo A)
-            estructs = conexion.ObtenerEstructurasTarifarias(1, periodo);
-          
+            estructs = conexion.ObtenerEstructurasTarifarias(1, periodo.ID);
 
             //Social
             dI_A_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
@@ -119,10 +116,9 @@ namespace FactAnalisis
             dI_A_Est_150_mas_Alc.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 10).FirstOrDefault().Alcantarillado;
         }
 
-        private void CargarGrupoB(int periodo)
+        private void CargarGrupoB(Periodo periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Segundo Grupo (Grupo B)
-            estructs = conexion.ObtenerEstructurasTarifarias(2, periodo);
+            estructs = conexion.ObtenerEstructurasTarifarias(2, periodo.ID);
 
             //Grupo B
 
@@ -190,7 +186,6 @@ namespace FactAnalisis
 
         private void CargarGrupoC(int periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Tercer Grupo (Grupo C)
             estructs = conexion.ObtenerEstructurasTarifarias(3, periodo);
 
             //Grupo C
@@ -260,7 +255,6 @@ namespace FactAnalisis
 
         private void CargarGrupoD(int periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Tercer Grupo (Grupo C)
             estructs = conexion.ObtenerEstructurasTarifarias(4, periodo);
 
             //Grupo D
@@ -330,7 +324,6 @@ namespace FactAnalisis
 
         private void CargarGrupoE(int periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Quinto Grupo (Grupo E)
             estructs = conexion.ObtenerEstructurasTarifarias(5, periodo);
 
             //Grupo E
@@ -405,7 +398,6 @@ namespace FactAnalisis
 
         private void CargarGrupoG(int periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Quinto Grupo (Grupo E)
             estructs = conexion.ObtenerEstructurasTarifarias(7, periodo);
 
             //Grupo G
@@ -472,10 +464,9 @@ namespace FactAnalisis
             dI_G_Est_150_mas_Alc.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 10).FirstOrDefault().Alcantarillado;
         }
 
-        private void CargarGrupoH(int periodo)
+        private void CargarGrupoH(Periodo periodo)
         {
-            //Obtener la ultima Estructura Tarifaria del Quinto Grupo (Grupo H)
-            estructs = conexion.ObtenerEstructurasTarifarias(8, periodo);
+            estructs = conexion.ObtenerEstructurasTarifarias(8, periodo.ID);
 
             //Grupo H
 
@@ -545,40 +536,39 @@ namespace FactAnalisis
         {
             Periodo periodoSelected = cmbPeriodos.SelectedItem as Periodo;
             dICargoFijoEstA.Value = periodoSelected.CargoFijo;
-            loadGroup(periodoSelected.ID);
-            
+            loadGroup(periodoSelected);
         }
 
-        public void loadGroup (int group)
+        public void loadGroup (Periodo periodo)
         {
             switch (superTabControl1.SelectedTabIndex)
             {
                 case 0:
-                    CargarGrupoA(group);
+                    CargarGrupoA(periodo);
                     break;
                 case 1:
-                    CargarGrupoB(group);
+                    CargarGrupoB(periodo);
                     break;
                 case 2:
-                    CargarGrupoC(group);
+                    CargarGrupoC(periodo.ID);
                     break;
                 case 3:
-                    CargarGrupoD(group);
+                    CargarGrupoD(periodo.ID);
                     break;
                 case 4:
-                    CargarGrupoE(group);
+                    CargarGrupoE(periodo.ID);
                     break;
                 case 5:
-                    CargarGrupoF(group);
+                    CargarGrupoF(periodo.ID);
                     break;
                 case 6:
-                    CargarGrupoG(group);
+                    CargarGrupoG(periodo.ID);
                     break;
                 case 7:
-                    CargarGrupoH(group);
+                    CargarGrupoH(periodo);
                     break;
                 default:
-                    CargarGrupoA(group);
+                    CargarGrupoA(periodo);
                     break;
             }
         }

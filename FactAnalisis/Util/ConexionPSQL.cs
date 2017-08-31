@@ -5,9 +5,6 @@ using NpgsqlTypes;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FactAnalisis.Util
 {
@@ -613,10 +610,5 @@ namespace FactAnalisis.Util
                 throw new Exception(ex.Message);
             }
         }
-
-
-
-
-
     }
 }

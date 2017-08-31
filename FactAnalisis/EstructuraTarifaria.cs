@@ -3,12 +3,8 @@ using FactAnalisis.Model;
 using FactAnalisis.Util;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FactAnalisis
@@ -52,6 +48,7 @@ namespace FactAnalisis
 
         private void CargarGrupoA(Periodo periodo)
         {
+            //Grupo A
             estructs = conexion.ObtenerEstructurasTarifarias(1, periodo.ID);
 
             //Social
@@ -118,10 +115,10 @@ namespace FactAnalisis
 
         private void CargarGrupoB(Periodo periodo)
         {
+            //Grupo B
             estructs = conexion.ObtenerEstructurasTarifarias(2, periodo.ID);
 
-            //Grupo B
-
+            
             //Social
             dI_B_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
             dI_B_Social_0_10_Alc.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
@@ -184,12 +181,12 @@ namespace FactAnalisis
             dI_B_Est_150_mas_Alc.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 10).FirstOrDefault().Alcantarillado;
         }
 
-        private void CargarGrupoC(int periodo)
+        private void CargarGrupoC(Periodo periodo)
         {
-            estructs = conexion.ObtenerEstructurasTarifarias(3, periodo);
-
             //Grupo C
+            estructs = conexion.ObtenerEstructurasTarifarias(3, periodo.ID);
 
+            
             //Social
             dI_C_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
             dI_C_Social_0_10_Alc.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
@@ -253,12 +250,11 @@ namespace FactAnalisis
         }
 
 
-        private void CargarGrupoD(int periodo)
+        private void CargarGrupoD(Periodo periodo)
         {
-            estructs = conexion.ObtenerEstructurasTarifarias(4, periodo);
-
             //Grupo D
-
+            estructs = conexion.ObtenerEstructurasTarifarias(4, periodo.ID);
+            
             //Social
             dI_D_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
             dI_D_Social_0_10_Alc.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
@@ -322,12 +318,11 @@ namespace FactAnalisis
         }
 
 
-        private void CargarGrupoE(int periodo)
+        private void CargarGrupoE(Periodo periodo)
         {
-            estructs = conexion.ObtenerEstructurasTarifarias(5, periodo);
-
             //Grupo E
-
+            estructs = conexion.ObtenerEstructurasTarifarias(5, periodo.ID);
+            
             //Social
             dI_E_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
             dI_E_Social_0_10_Alc.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
@@ -391,17 +386,18 @@ namespace FactAnalisis
         }
 
 
-        private void CargarGrupoF(int periodo)
+        private void CargarGrupoF(Periodo periodo)
         {
-            //throw new NotImplementedException();
+            //Grupo G
+            estructs = conexion.ObtenerEstructurasTarifarias(6, periodo.ID);
+
         }
 
-        private void CargarGrupoG(int periodo)
+        private void CargarGrupoG(Periodo periodo)
         {
-            estructs = conexion.ObtenerEstructurasTarifarias(7, periodo);
-
             //Grupo G
-
+            estructs = conexion.ObtenerEstructurasTarifarias(7, periodo.ID);
+            
             //Social
             dI_G_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
             dI_G_Social_0_10_Alc.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
@@ -536,6 +532,7 @@ namespace FactAnalisis
         {
             Periodo periodoSelected = cmbPeriodos.SelectedItem as Periodo;
             dICargoFijoEstA.Value = periodoSelected.CargoFijo;
+            superTabControl1.SelectedTabIndex = 0;
             loadGroup(periodoSelected);
         }
 
@@ -550,19 +547,19 @@ namespace FactAnalisis
                     CargarGrupoB(periodo);
                     break;
                 case 2:
-                    CargarGrupoC(periodo.ID);
+                    CargarGrupoC(periodo);
                     break;
                 case 3:
-                    CargarGrupoD(periodo.ID);
+                    CargarGrupoD(periodo);
                     break;
                 case 4:
-                    CargarGrupoE(periodo.ID);
+                    CargarGrupoE(periodo);
                     break;
                 case 5:
-                    CargarGrupoF(periodo.ID);
+                    CargarGrupoF(periodo);
                     break;
                 case 6:
-                    CargarGrupoG(periodo.ID);
+                    CargarGrupoG(periodo);
                     break;
                 case 7:
                     CargarGrupoH(periodo);

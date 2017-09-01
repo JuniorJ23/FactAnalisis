@@ -388,9 +388,54 @@ namespace FactAnalisis
 
         private void CargarGrupoF(Periodo periodo)
         {
-            //Grupo G
+            //Grupo F
             estructs = conexion.ObtenerEstructurasTarifarias(6, periodo.ID);
 
+            dI_F_Social_0_10_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Agua;
+            dI_F_Social_0_10_Alca.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 1).FirstOrDefault().Alcantarillado;
+            dI_F_Social_10_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 2).FirstOrDefault().Agua;
+            dI_F_Social_10_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 6 && est.IDRango == 2).FirstOrDefault().Alcantarillado;
+
+            //Domestica 1
+            dI_F_Dom1_0_8_Agua.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 3).FirstOrDefault().Agua;
+            dI_F_Dom1_0_8_Alca.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 3).FirstOrDefault().Alcantarillado;
+
+            dI_F_Dom1_8_25_Agua.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 4).FirstOrDefault().Agua;
+            dI_F_Dom1_8_25_Alca.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 4).FirstOrDefault().Alcantarillado;
+
+            dI_F_Dom1_25_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 6).FirstOrDefault().Agua;
+            dI_F_Dom1_25_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 1 && est.IDRango == 6).FirstOrDefault().Alcantarillado;
+
+            //Domestica 2
+            dI_F_Dom2_0_8_Agua.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 3).FirstOrDefault().Agua;
+            dI_F_Dom2_0_8_Alca.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 3).FirstOrDefault().Alcantarillado;
+
+            dI_F_Dom2_8_25_Agua.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 4).FirstOrDefault().Agua;
+            dI_F_Dom2_8_25_Alca.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 4).FirstOrDefault().Alcantarillado;
+
+            dI_F_Dom2_25_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 6).FirstOrDefault().Agua;
+            dI_F_Dom2_25_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 2 && est.IDRango == 6).FirstOrDefault().Alcantarillado;
+
+            //Comercial
+            dI_F_Com_0_50_Agua.Value = estructs.Where(est => est.IDCategoria == 3 && est.IDRango == 8).FirstOrDefault().Agua;
+            dI_F_Com_0_50_Alca.Value = estructs.Where(est => est.IDCategoria == 3 && est.IDRango == 8).FirstOrDefault().Alcantarillado;
+
+            dI_F_Com_50_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 3 && est.IDRango == 11).FirstOrDefault().Agua;
+            dI_F_Com_50_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 3 && est.IDRango == 11).FirstOrDefault().Alcantarillado;
+
+            //Industrial
+            dI_F_Ind_0_50_Agua.Value = estructs.Where(est => est.IDCategoria == 4 && est.IDRango == 8).FirstOrDefault().Agua;
+            dI_F_Ind_0_50_Alca.Value = estructs.Where(est => est.IDCategoria == 4 && est.IDRango == 8).FirstOrDefault().Alcantarillado;
+
+            dI_F_Ind_50_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 4 && est.IDRango == 11).FirstOrDefault().Agua;
+            dI_F_Ind_50_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 4 && est.IDRango == 11).FirstOrDefault().Alcantarillado;
+
+            //Estatal
+            dI_F_Est_0_50_Agua.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 8).FirstOrDefault().Agua;
+            dI_F_Est_0_50_Alca.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 8).FirstOrDefault().Alcantarillado;
+
+            dI_F_Est_50_A_MAS_Agua.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 11).FirstOrDefault().Agua;
+            dI_F_Est_50_A_MAS_Alca.Value = estructs.Where(est => est.IDCategoria == 5 && est.IDRango == 11).FirstOrDefault().Alcantarillado;
         }
 
         private void CargarGrupoG(Periodo periodo)

@@ -27,7 +27,6 @@ namespace FactAnalisis.Util
           
         }
 
-
         private void ConnectToDatabase()
         {
             try
@@ -45,8 +44,6 @@ namespace FactAnalisis.Util
                 throw new Exception(ex.Message);
             }
         }
-
-
 
         public List<EstructuraTarifariaModel> ObtenerEstructurasTarifarias(int grupo, int periodo)
         {
@@ -93,7 +90,6 @@ namespace FactAnalisis.Util
             return periodo;
         }
 
-
         public List<Periodo> ObtenerTodosPeriodos()
         {
             List<Periodo> result = new List<Periodo>();
@@ -114,7 +110,6 @@ namespace FactAnalisis.Util
             }
             return result;
         }
-
 
         public void InsertarRegistrosEnBaseFacturacion(BaseCSV[] basesCSV)
         {
@@ -239,11 +234,8 @@ namespace FactAnalisis.Util
                         throw new Exception(ex.Message);
                     }
                 }
-
                 transaction.Commit();
             }
-
-
         }
 
         public void LimpiarTablasBaseYNotas()
@@ -262,8 +254,6 @@ namespace FactAnalisis.Util
                 throw new Exception(ex.Message);
             }
         }
-
-
 
         public void GenerarFacturacionNeta()
         {
@@ -288,9 +278,7 @@ namespace FactAnalisis.Util
             {
                 throw new Exception(ex.Message);
             }
-
         }
-
 
         public void NormalizarSegunSUNASS()
         {
@@ -308,7 +296,6 @@ namespace FactAnalisis.Util
             {
                 throw new Exception(ex.Message);
             }
-
         }
 
         public void InsertarNotas()
@@ -599,24 +586,16 @@ namespace FactAnalisis.Util
         public void CorregirObtenerUsuariosActivosSinVolumenYSinImportes()
         {
             string sql1 = "UPDATE tbl_base_fact SET escone = '2' WHERE escone = '1' and volfact = 0 and imagua + imalca + imcafi = 0;";
-            
-
             NpgsqlCommand command = new NpgsqlCommand(sql1, Connection);
            
             try
             {
                 command.ExecuteNonQuery();
-               
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-
-
-
-
-
     }
 }
